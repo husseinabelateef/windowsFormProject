@@ -405,7 +405,7 @@
             this.CategoryPanel.Radius = 25;
             this.CategoryPanel.Size = new System.Drawing.Size(836, 492);
             this.CategoryPanel.TabIndex = 9;
-
+             
             // 
             // BillPanel
             // 
