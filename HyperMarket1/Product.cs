@@ -10,7 +10,6 @@ namespace HyperMarket1
     {
         public string Name { get; set; }
         static int NumberOfProduct = 1;
-        public string Description { get; set; }
         public int ID { get { return ID; } private set { this.ID = NumberOfProduct; } }
         public double PriceForBuy { get; set; }
         public double PriceForSell { get; set; }

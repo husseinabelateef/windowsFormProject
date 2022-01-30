@@ -9,12 +9,12 @@ namespace HyperMarket1
     internal class Cashier
     {
         public string Name { get; set; }
-        static int NumberOfCashiers = 1;
+        static int NumberOfCashiers = 0;
         public int ID { get; set; } 
         public string Username { get; set; } 
         public string Password { get; set; }
         public int WorkingHours { get; set; }
-        public List<string> Phone;
+        public string Phone { get; set; }
         public float Salary { get; set; }
 
         //public List<ProductNeed> Products=new List<ProductNeed>();
@@ -23,18 +23,16 @@ namespace HyperMarket1
         {
             NumberOfCashiers++;
         }
-        public Cashier(string Name, String UserName, String Password, int WorkingHours, List<String> phone, float Salary)
+        public Cashier(string Name, String UserName, String Password, int WorkingHours, string PPhone, float Salary)
         {
             NumberOfCashiers++;
+            this.Name = Name;
             this.WorkingHours = WorkingHours;
             this.Salary = Salary;
             this.Password = Password;
             this.Username = UserName;
-            this.Phone = new List<string>();
-            foreach (string p in phone)
-            {
-                this.Phone.Add(p);
-            }
+            this.Phone = PPhone;
+            this.ID = NumberOfCashiers;
         }
 
         //check existance of product search 
