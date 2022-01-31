@@ -29,19 +29,16 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminForm));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.AdminNamingLabel = new System.Windows.Forms.Label();
             this.CashierButton = new Guna.UI.WinForms.GunaAdvenceButton();
@@ -52,6 +49,15 @@
             this.LogoutButton = new Guna.UI.WinForms.GunaAdvenceButton();
             this.ExitButton = new Guna.UI.WinForms.GunaImageButton();
             this.CashierPanel = new Guna.UI.WinForms.GunaElipsePanel();
+            this.CahshierWorkingHourNumeric = new Guna.UI.WinForms.GunaNumeric();
+            this.CashierDataGridView = new Guna.UI.WinForms.GunaDataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CashierDeleteButton = new Guna.UI.WinForms.GunaAdvenceButton();
             this.CashierEditButton = new Guna.UI.WinForms.GunaAdvenceButton();
             this.CashierAddButton = new Guna.UI.WinForms.GunaAdvenceButton();
@@ -81,7 +87,6 @@
             this.BillPanel = new Guna.UI.WinForms.GunaElipsePanel();
             this.BillTotalPricTxtBox = new Guna.UI.WinForms.GunaTextBox();
             this.BillPayBtn = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.gunaDataGridView1 = new Guna.UI.WinForms.GunaDataGridView();
             this.BillPrintBtn = new Guna.UI.WinForms.GunaAdvenceButton();
             this.BillDeleteProductBtn = new Guna.UI.WinForms.GunaAdvenceButton();
             this.BiilEditProductBtn = new Guna.UI.WinForms.GunaAdvenceButton();
@@ -107,7 +112,6 @@
             this.BiliDLabel = new System.Windows.Forms.Label();
             this.BilliDTxtBox = new Guna.UI.WinForms.GunaTextBox();
             this.SupplierPanel = new Guna.UI.WinForms.GunaElipsePanel();
-            this.SupplierGridView = new Guna.UI.WinForms.GunaDataGridView();
             this.SupplierDeleteProductBtn = new Guna.UI.WinForms.GunaAdvenceButton();
             this.SupplierEditProductBtn = new Guna.UI.WinForms.GunaAdvenceButton();
             this.SupplierAddProductBtn = new Guna.UI.WinForms.GunaAdvenceButton();
@@ -134,26 +138,20 @@
             this.ReportTypeLabel = new System.Windows.Forms.Label();
             this.ReportTypeComboBox = new System.Windows.Forms.ComboBox();
             this.ReportGridView = new Guna.UI.WinForms.GunaDataGridView();
-            this.CashierDataGridView = new Guna.UI.WinForms.GunaDataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SupplierIIDLabel = new Guna.UI.WinForms.GunaLabel();
+            this.SupplierIDTxtBox = new Guna.UI.WinForms.GunaTextBox();
+            this.gunaDataGridView1 = new Guna.UI.WinForms.GunaDataGridView();
+            this.MinimixeButton = new Guna.UI.WinForms.GunaImageButton();
             this.cashierBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.CahshierWorkingHourNumeric = new Guna.UI.WinForms.GunaNumeric();
             this.CashierPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CashierDataGridView)).BeginInit();
             this.CategoryPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CategoryGridView)).BeginInit();
             this.BillPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView1)).BeginInit();
             this.SupplierPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.SupplierGridView)).BeginInit();
             this.ReportPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ReportGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CashierDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cashierBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -166,10 +164,9 @@
             // 
             this.AdminNamingLabel.AutoSize = true;
             this.AdminNamingLabel.Font = new System.Drawing.Font("Ravie", 20.25F, System.Drawing.FontStyle.Italic);
-            this.AdminNamingLabel.Location = new System.Drawing.Point(45, 16);
-            this.AdminNamingLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.AdminNamingLabel.Location = new System.Drawing.Point(55, 32);
             this.AdminNamingLabel.Name = "AdminNamingLabel";
-            this.AdminNamingLabel.Size = new System.Drawing.Size(127, 36);
+            this.AdminNamingLabel.Size = new System.Drawing.Size(161, 45);
             this.AdminNamingLabel.TabIndex = 0;
             this.AdminNamingLabel.Text = "Admin";
             // 
@@ -194,8 +191,8 @@
             this.CashierButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.CashierButton.ImageSize = new System.Drawing.Size(40, 40);
             this.CashierButton.LineColor = System.Drawing.Color.Black;
-            this.CashierButton.Location = new System.Drawing.Point(24, 83);
-            this.CashierButton.Margin = new System.Windows.Forms.Padding(2);
+            this.CashierButton.Location = new System.Drawing.Point(32, 102);
+            this.CashierButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CashierButton.Name = "CashierButton";
             this.CashierButton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(227)))), ((int)(((byte)(219)))));
             this.CashierButton.OnHoverBorderColor = System.Drawing.Color.White;
@@ -204,7 +201,7 @@
             this.CashierButton.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(176)))), ((int)(((byte)(174)))));
             this.CashierButton.OnPressedColor = System.Drawing.Color.Black;
             this.CashierButton.Radius = 5;
-            this.CashierButton.Size = new System.Drawing.Size(148, 53);
+            this.CashierButton.Size = new System.Drawing.Size(197, 65);
             this.CashierButton.TabIndex = 1;
             this.CashierButton.Text = "Cashier";
             this.CashierButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -231,8 +228,8 @@
             this.CategoryButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.CategoryButton.ImageSize = new System.Drawing.Size(40, 40);
             this.CategoryButton.LineColor = System.Drawing.Color.Black;
-            this.CategoryButton.Location = new System.Drawing.Point(24, 164);
-            this.CategoryButton.Margin = new System.Windows.Forms.Padding(2);
+            this.CategoryButton.Location = new System.Drawing.Point(32, 202);
+            this.CategoryButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CategoryButton.Name = "CategoryButton";
             this.CategoryButton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(227)))), ((int)(((byte)(219)))));
             this.CategoryButton.OnHoverBorderColor = System.Drawing.Color.White;
@@ -241,7 +238,7 @@
             this.CategoryButton.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(176)))), ((int)(((byte)(174)))));
             this.CategoryButton.OnPressedColor = System.Drawing.Color.Black;
             this.CategoryButton.Radius = 5;
-            this.CategoryButton.Size = new System.Drawing.Size(148, 53);
+            this.CategoryButton.Size = new System.Drawing.Size(197, 65);
             this.CategoryButton.TabIndex = 2;
             this.CategoryButton.Text = "Category";
             this.CategoryButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -267,8 +264,8 @@
             this.BillButton.Image = ((System.Drawing.Image)(resources.GetObject("BillButton.Image")));
             this.BillButton.ImageSize = new System.Drawing.Size(40, 40);
             this.BillButton.LineColor = System.Drawing.Color.Black;
-            this.BillButton.Location = new System.Drawing.Point(24, 247);
-            this.BillButton.Margin = new System.Windows.Forms.Padding(2);
+            this.BillButton.Location = new System.Drawing.Point(32, 304);
+            this.BillButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BillButton.Name = "BillButton";
             this.BillButton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(227)))), ((int)(((byte)(219)))));
             this.BillButton.OnHoverBorderColor = System.Drawing.Color.White;
@@ -277,7 +274,7 @@
             this.BillButton.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(176)))), ((int)(((byte)(174)))));
             this.BillButton.OnPressedColor = System.Drawing.Color.Black;
             this.BillButton.Radius = 5;
-            this.BillButton.Size = new System.Drawing.Size(148, 53);
+            this.BillButton.Size = new System.Drawing.Size(197, 65);
             this.BillButton.TabIndex = 3;
             this.BillButton.Text = "Bill";
             this.BillButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -304,8 +301,8 @@
             this.SupplierButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.SupplierButton.ImageSize = new System.Drawing.Size(40, 40);
             this.SupplierButton.LineColor = System.Drawing.Color.Black;
-            this.SupplierButton.Location = new System.Drawing.Point(24, 335);
-            this.SupplierButton.Margin = new System.Windows.Forms.Padding(2);
+            this.SupplierButton.Location = new System.Drawing.Point(32, 412);
+            this.SupplierButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SupplierButton.Name = "SupplierButton";
             this.SupplierButton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(227)))), ((int)(((byte)(219)))));
             this.SupplierButton.OnHoverBorderColor = System.Drawing.Color.White;
@@ -314,7 +311,7 @@
             this.SupplierButton.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(176)))), ((int)(((byte)(174)))));
             this.SupplierButton.OnPressedColor = System.Drawing.Color.Black;
             this.SupplierButton.Radius = 5;
-            this.SupplierButton.Size = new System.Drawing.Size(148, 53);
+            this.SupplierButton.Size = new System.Drawing.Size(197, 65);
             this.SupplierButton.TabIndex = 4;
             this.SupplierButton.Text = "Supplier";
             this.SupplierButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -341,8 +338,8 @@
             this.ReportButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.ReportButton.ImageSize = new System.Drawing.Size(40, 40);
             this.ReportButton.LineColor = System.Drawing.Color.Black;
-            this.ReportButton.Location = new System.Drawing.Point(24, 424);
-            this.ReportButton.Margin = new System.Windows.Forms.Padding(2);
+            this.ReportButton.Location = new System.Drawing.Point(32, 522);
+            this.ReportButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ReportButton.Name = "ReportButton";
             this.ReportButton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(227)))), ((int)(((byte)(219)))));
             this.ReportButton.OnHoverBorderColor = System.Drawing.Color.White;
@@ -351,7 +348,7 @@
             this.ReportButton.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(176)))), ((int)(((byte)(174)))));
             this.ReportButton.OnPressedColor = System.Drawing.Color.Black;
             this.ReportButton.Radius = 5;
-            this.ReportButton.Size = new System.Drawing.Size(148, 53);
+            this.ReportButton.Size = new System.Drawing.Size(197, 65);
             this.ReportButton.TabIndex = 5;
             this.ReportButton.Text = "Report";
             this.ReportButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -378,8 +375,8 @@
             this.LogoutButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.LogoutButton.ImageSize = new System.Drawing.Size(40, 40);
             this.LogoutButton.LineColor = System.Drawing.Color.Black;
-            this.LogoutButton.Location = new System.Drawing.Point(24, 508);
-            this.LogoutButton.Margin = new System.Windows.Forms.Padding(2);
+            this.LogoutButton.Location = new System.Drawing.Point(32, 625);
+            this.LogoutButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.LogoutButton.Name = "LogoutButton";
             this.LogoutButton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(227)))), ((int)(((byte)(219)))));
             this.LogoutButton.OnHoverBorderColor = System.Drawing.Color.White;
@@ -388,7 +385,7 @@
             this.LogoutButton.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(176)))), ((int)(((byte)(174)))));
             this.LogoutButton.OnPressedColor = System.Drawing.Color.Black;
             this.LogoutButton.Radius = 5;
-            this.LogoutButton.Size = new System.Drawing.Size(148, 53);
+            this.LogoutButton.Size = new System.Drawing.Size(197, 65);
             this.LogoutButton.TabIndex = 6;
             this.LogoutButton.Text = "Logout";
             this.LogoutButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -398,11 +395,12 @@
             this.ExitButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.ExitButton.Image = ((System.Drawing.Image)(resources.GetObject("ExitButton.Image")));
             this.ExitButton.ImageSize = new System.Drawing.Size(30, 30);
-            this.ExitButton.Location = new System.Drawing.Point(985, 14);
+            this.ExitButton.Location = new System.Drawing.Point(1316, 7);
+            this.ExitButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ExitButton.Name = "ExitButton";
             this.ExitButton.OnHoverImage = null;
             this.ExitButton.OnHoverImageOffset = new System.Drawing.Point(0, 0);
-            this.ExitButton.Size = new System.Drawing.Size(41, 38);
+            this.ExitButton.Size = new System.Drawing.Size(55, 47);
             this.ExitButton.TabIndex = 7;
             this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
@@ -428,19 +426,159 @@
             this.CashierPanel.Controls.Add(this.CashierPwdTxtBox);
             this.CashierPanel.Controls.Add(this.CashierUsrNameTxtBox);
             this.CashierPanel.Controls.Add(this.CashierNameTxtBox);
-            this.CashierPanel.Location = new System.Drawing.Point(190, 58);
-            this.CashierPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.CashierPanel.Location = new System.Drawing.Point(253, 71);
+            this.CashierPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CashierPanel.Name = "CashierPanel";
             this.CashierPanel.Radius = 25;
-            this.CashierPanel.Size = new System.Drawing.Size(836, 492);
+            this.CashierPanel.Size = new System.Drawing.Size(1115, 606);
             this.CashierPanel.TabIndex = 8;
+            // 
+            // CahshierWorkingHourNumeric
+            // 
+            this.CahshierWorkingHourNumeric.BackColor = System.Drawing.Color.Transparent;
+            this.CahshierWorkingHourNumeric.BaseColor = System.Drawing.Color.White;
+            this.CahshierWorkingHourNumeric.BorderColor = System.Drawing.Color.Silver;
+            this.CahshierWorkingHourNumeric.BorderSize = 2;
+            this.CahshierWorkingHourNumeric.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(176)))), ((int)(((byte)(174)))));
+            this.CahshierWorkingHourNumeric.ButtonForeColor = System.Drawing.Color.White;
+            this.CahshierWorkingHourNumeric.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.CahshierWorkingHourNumeric.ForeColor = System.Drawing.Color.Black;
+            this.CahshierWorkingHourNumeric.Location = new System.Drawing.Point(776, 55);
+            this.CahshierWorkingHourNumeric.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CahshierWorkingHourNumeric.Maximum = ((long)(24));
+            this.CahshierWorkingHourNumeric.Minimum = ((long)(1));
+            this.CahshierWorkingHourNumeric.Name = "CahshierWorkingHourNumeric";
+            this.CahshierWorkingHourNumeric.Radius = 5;
+            this.CahshierWorkingHourNumeric.Size = new System.Drawing.Size(198, 30);
+            this.CahshierWorkingHourNumeric.TabIndex = 20;
+            this.CahshierWorkingHourNumeric.Text = "gunaNumeric1";
+            this.CahshierWorkingHourNumeric.Value = ((long)(1));
+            this.CahshierWorkingHourNumeric.ValueChanged += new System.EventHandler(this.CahshierWorkingHourNumeric_ValueChanged);
+            // 
+            // CashierDataGridView
+            // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.CashierDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.CashierDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.CashierDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(227)))), ((int)(((byte)(219)))));
+            this.CashierDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.CashierDataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.CashierDataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(176)))), ((int)(((byte)(174)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.CashierDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.CashierDataGridView.ColumnHeadersHeight = 40;
+            this.CashierDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column7,
+            this.Column5,
+            this.Column6,
+            this.Column4,
+            this.Column3});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(176)))), ((int)(((byte)(174)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.CashierDataGridView.DefaultCellStyle = dataGridViewCellStyle3;
+            this.CashierDataGridView.EnableHeadersVisualStyles = false;
+            this.CashierDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(227)))), ((int)(((byte)(219)))));
+            this.CashierDataGridView.Location = new System.Drawing.Point(15, 305);
+            this.CashierDataGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CashierDataGridView.Name = "CashierDataGridView";
+            this.CashierDataGridView.RowHeadersVisible = false;
+            this.CashierDataGridView.RowHeadersWidth = 51;
+            this.CashierDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.CashierDataGridView.Size = new System.Drawing.Size(1080, 288);
+            this.CashierDataGridView.TabIndex = 19;
+            this.CashierDataGridView.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
+            this.CashierDataGridView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.CashierDataGridView.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.CashierDataGridView.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.CashierDataGridView.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.CashierDataGridView.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.CashierDataGridView.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(227)))), ((int)(((byte)(219)))));
+            this.CashierDataGridView.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(227)))), ((int)(((byte)(219)))));
+            this.CashierDataGridView.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(176)))), ((int)(((byte)(174)))));
+            this.CashierDataGridView.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.CashierDataGridView.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.CashierDataGridView.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.CashierDataGridView.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.CashierDataGridView.ThemeStyle.HeaderStyle.Height = 40;
+            this.CashierDataGridView.ThemeStyle.ReadOnly = false;
+            this.CashierDataGridView.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.CashierDataGridView.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.CashierDataGridView.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.CashierDataGridView.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.CashierDataGridView.ThemeStyle.RowsStyle.Height = 22;
+            this.CashierDataGridView.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(176)))), ((int)(((byte)(174)))));
+            this.CashierDataGridView.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "Phone";
+            this.Column1.HeaderText = "Phone";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "Name";
+            this.Column2.HeaderText = "Name";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            // 
+            // Column7
+            // 
+            this.Column7.DataPropertyName = "ID";
+            this.Column7.HeaderText = "ID";
+            this.Column7.MinimumWidth = 6;
+            this.Column7.Name = "Column7";
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "Username";
+            this.Column5.HeaderText = "User Name";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            this.Column6.DataPropertyName = "Password";
+            this.Column6.HeaderText = "Password";
+            this.Column6.MinimumWidth = 6;
+            this.Column6.Name = "Column6";
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "WorkingHours";
+            this.Column4.HeaderText = "Working Hour";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "Salary";
+            this.Column3.HeaderText = "Salary";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
             // 
             // CashierDeleteButton
             // 
             this.CashierDeleteButton.AnimationHoverSpeed = 0.07F;
             this.CashierDeleteButton.AnimationSpeed = 0.03F;
-            this.CashierDeleteButton.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.CashierDeleteButton.BorderColor = System.Drawing.Color.Black;
+            this.CashierDeleteButton.BackColor = System.Drawing.Color.Transparent;
+            this.CashierDeleteButton.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.CashierDeleteButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(176)))), ((int)(((byte)(174)))));
+            this.CashierDeleteButton.BorderSize = 3;
             this.CashierDeleteButton.CheckedBaseColor = System.Drawing.Color.Gray;
             this.CashierDeleteButton.CheckedBorderColor = System.Drawing.Color.Black;
             this.CashierDeleteButton.CheckedForeColor = System.Drawing.Color.White;
@@ -448,20 +586,22 @@
             this.CashierDeleteButton.CheckedLineColor = System.Drawing.Color.DimGray;
             this.CashierDeleteButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.CashierDeleteButton.FocusedColor = System.Drawing.Color.Empty;
-            this.CashierDeleteButton.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.CashierDeleteButton.ForeColor = System.Drawing.Color.White;
+            this.CashierDeleteButton.Font = new System.Drawing.Font("Snap ITC", 12F);
+            this.CashierDeleteButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(91)))), ((int)(((byte)(110)))));
             this.CashierDeleteButton.Image = ((System.Drawing.Image)(resources.GetObject("CashierDeleteButton.Image")));
-            this.CashierDeleteButton.ImageSize = new System.Drawing.Size(20, 20);
+            this.CashierDeleteButton.ImageSize = new System.Drawing.Size(27, 27);
             this.CashierDeleteButton.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.CashierDeleteButton.Location = new System.Drawing.Point(602, 230);
+            this.CashierDeleteButton.Location = new System.Drawing.Point(762, 225);
+            this.CashierDeleteButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CashierDeleteButton.Name = "CashierDeleteButton";
-            this.CashierDeleteButton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.CashierDeleteButton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(91)))), ((int)(((byte)(110)))));
             this.CashierDeleteButton.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.CashierDeleteButton.OnHoverForeColor = System.Drawing.Color.White;
-            this.CashierDeleteButton.OnHoverImage = null;
+            this.CashierDeleteButton.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(227)))), ((int)(((byte)(219)))));
+            this.CashierDeleteButton.OnHoverImage = ((System.Drawing.Image)(resources.GetObject("CashierDeleteButton.OnHoverImage")));
             this.CashierDeleteButton.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.CashierDeleteButton.OnPressedColor = System.Drawing.Color.Black;
-            this.CashierDeleteButton.Size = new System.Drawing.Size(180, 42);
+            this.CashierDeleteButton.Radius = 10;
+            this.CashierDeleteButton.Size = new System.Drawing.Size(240, 52);
             this.CashierDeleteButton.TabIndex = 18;
             this.CashierDeleteButton.Text = "Delete Cashier";
             // 
@@ -469,8 +609,10 @@
             // 
             this.CashierEditButton.AnimationHoverSpeed = 0.07F;
             this.CashierEditButton.AnimationSpeed = 0.03F;
-            this.CashierEditButton.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.CashierEditButton.BorderColor = System.Drawing.Color.Black;
+            this.CashierEditButton.BackColor = System.Drawing.Color.Transparent;
+            this.CashierEditButton.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.CashierEditButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(176)))), ((int)(((byte)(174)))));
+            this.CashierEditButton.BorderSize = 3;
             this.CashierEditButton.CheckedBaseColor = System.Drawing.Color.Gray;
             this.CashierEditButton.CheckedBorderColor = System.Drawing.Color.Black;
             this.CashierEditButton.CheckedForeColor = System.Drawing.Color.White;
@@ -478,20 +620,22 @@
             this.CashierEditButton.CheckedLineColor = System.Drawing.Color.DimGray;
             this.CashierEditButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.CashierEditButton.FocusedColor = System.Drawing.Color.Empty;
-            this.CashierEditButton.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.CashierEditButton.ForeColor = System.Drawing.Color.White;
+            this.CashierEditButton.Font = new System.Drawing.Font("Snap ITC", 12F);
+            this.CashierEditButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(91)))), ((int)(((byte)(110)))));
             this.CashierEditButton.Image = ((System.Drawing.Image)(resources.GetObject("CashierEditButton.Image")));
-            this.CashierEditButton.ImageSize = new System.Drawing.Size(20, 20);
+            this.CashierEditButton.ImageSize = new System.Drawing.Size(30, 30);
             this.CashierEditButton.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.CashierEditButton.Location = new System.Drawing.Point(333, 230);
+            this.CashierEditButton.Location = new System.Drawing.Point(762, 163);
+            this.CashierEditButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CashierEditButton.Name = "CashierEditButton";
-            this.CashierEditButton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.CashierEditButton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(91)))), ((int)(((byte)(110)))));
             this.CashierEditButton.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.CashierEditButton.OnHoverForeColor = System.Drawing.Color.White;
-            this.CashierEditButton.OnHoverImage = null;
+            this.CashierEditButton.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(227)))), ((int)(((byte)(219)))));
+            this.CashierEditButton.OnHoverImage = ((System.Drawing.Image)(resources.GetObject("CashierEditButton.OnHoverImage")));
             this.CashierEditButton.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.CashierEditButton.OnPressedColor = System.Drawing.Color.Black;
-            this.CashierEditButton.Size = new System.Drawing.Size(180, 42);
+            this.CashierEditButton.Radius = 10;
+            this.CashierEditButton.Size = new System.Drawing.Size(240, 52);
             this.CashierEditButton.TabIndex = 17;
             this.CashierEditButton.Text = "Edit Cashier";
             // 
@@ -499,8 +643,10 @@
             // 
             this.CashierAddButton.AnimationHoverSpeed = 0.07F;
             this.CashierAddButton.AnimationSpeed = 0.03F;
-            this.CashierAddButton.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.CashierAddButton.BorderColor = System.Drawing.Color.Black;
+            this.CashierAddButton.BackColor = System.Drawing.Color.Transparent;
+            this.CashierAddButton.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.CashierAddButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(176)))), ((int)(((byte)(174)))));
+            this.CashierAddButton.BorderSize = 3;
             this.CashierAddButton.CheckedBaseColor = System.Drawing.Color.Gray;
             this.CashierAddButton.CheckedBorderColor = System.Drawing.Color.Black;
             this.CashierAddButton.CheckedForeColor = System.Drawing.Color.White;
@@ -508,20 +654,22 @@
             this.CashierAddButton.CheckedLineColor = System.Drawing.Color.DimGray;
             this.CashierAddButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.CashierAddButton.FocusedColor = System.Drawing.Color.Empty;
-            this.CashierAddButton.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.CashierAddButton.ForeColor = System.Drawing.Color.White;
+            this.CashierAddButton.Font = new System.Drawing.Font("Snap ITC", 12F);
+            this.CashierAddButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(91)))), ((int)(((byte)(110)))));
             this.CashierAddButton.Image = ((System.Drawing.Image)(resources.GetObject("CashierAddButton.Image")));
-            this.CashierAddButton.ImageSize = new System.Drawing.Size(20, 20);
+            this.CashierAddButton.ImageSize = new System.Drawing.Size(30, 30);
             this.CashierAddButton.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.CashierAddButton.Location = new System.Drawing.Point(11, 230);
+            this.CashierAddButton.Location = new System.Drawing.Point(762, 103);
+            this.CashierAddButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CashierAddButton.Name = "CashierAddButton";
-            this.CashierAddButton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.CashierAddButton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(91)))), ((int)(((byte)(110)))));
             this.CashierAddButton.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.CashierAddButton.OnHoverForeColor = System.Drawing.Color.White;
-            this.CashierAddButton.OnHoverImage = null;
+            this.CashierAddButton.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(227)))), ((int)(((byte)(219)))));
+            this.CashierAddButton.OnHoverImage = ((System.Drawing.Image)(resources.GetObject("CashierAddButton.OnHoverImage")));
             this.CashierAddButton.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.CashierAddButton.OnPressedColor = System.Drawing.Color.Black;
-            this.CashierAddButton.Size = new System.Drawing.Size(180, 42);
+            this.CashierAddButton.Radius = 10;
+            this.CashierAddButton.Size = new System.Drawing.Size(240, 52);
             this.CashierAddButton.TabIndex = 16;
             this.CashierAddButton.Text = "Add Cashier";
             this.CashierAddButton.Click += new System.EventHandler(this.CashierAddButton_Click);
@@ -529,75 +677,90 @@
             // CashierPhonesLabel
             // 
             this.CashierPhonesLabel.AutoSize = true;
-            this.CashierPhonesLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.CashierPhonesLabel.Location = new System.Drawing.Point(599, 19);
+            this.CashierPhonesLabel.Font = new System.Drawing.Font("Snap ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CashierPhonesLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(91)))), ((int)(((byte)(110)))));
+            this.CashierPhonesLabel.Location = new System.Drawing.Point(474, 11);
+            this.CashierPhonesLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CashierPhonesLabel.Name = "CashierPhonesLabel";
-            this.CashierPhonesLabel.Size = new System.Drawing.Size(41, 15);
+            this.CashierPhonesLabel.Size = new System.Drawing.Size(79, 27);
             this.CashierPhonesLabel.TabIndex = 15;
             this.CashierPhonesLabel.Text = "Phone";
             // 
             // CashierWorkingHourLabel
             // 
             this.CashierWorkingHourLabel.AutoSize = true;
-            this.CashierWorkingHourLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.CashierWorkingHourLabel.Location = new System.Drawing.Point(331, 156);
+            this.CashierWorkingHourLabel.Font = new System.Drawing.Font("Snap ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CashierWorkingHourLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(91)))), ((int)(((byte)(110)))));
+            this.CashierWorkingHourLabel.Location = new System.Drawing.Point(757, 16);
+            this.CashierWorkingHourLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CashierWorkingHourLabel.Name = "CashierWorkingHourLabel";
-            this.CashierWorkingHourLabel.Size = new System.Drawing.Size(82, 15);
+            this.CashierWorkingHourLabel.Size = new System.Drawing.Size(169, 27);
             this.CashierWorkingHourLabel.TabIndex = 14;
             this.CashierWorkingHourLabel.Text = "Working Hour";
             // 
             // CashierIdLabel
             // 
             this.CashierIdLabel.AutoSize = true;
-            this.CashierIdLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.CashierIdLabel.Location = new System.Drawing.Point(331, 80);
+            this.CashierIdLabel.Font = new System.Drawing.Font("Snap ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CashierIdLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(91)))), ((int)(((byte)(110)))));
+            this.CashierIdLabel.Location = new System.Drawing.Point(120, 101);
+            this.CashierIdLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CashierIdLabel.Name = "CashierIdLabel";
-            this.CashierIdLabel.Size = new System.Drawing.Size(18, 15);
+            this.CashierIdLabel.Size = new System.Drawing.Size(39, 27);
             this.CashierIdLabel.TabIndex = 13;
             this.CashierIdLabel.Text = "ID";
             // 
             // CashierUsernamLabel
             // 
             this.CashierUsernamLabel.AutoSize = true;
-            this.CashierUsernamLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.CashierUsernamLabel.Location = new System.Drawing.Point(330, 19);
+            this.CashierUsernamLabel.Font = new System.Drawing.Font("Snap ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CashierUsernamLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(91)))), ((int)(((byte)(110)))));
+            this.CashierUsernamLabel.Location = new System.Drawing.Point(87, 195);
+            this.CashierUsernamLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CashierUsernamLabel.Name = "CashierUsernamLabel";
-            this.CashierUsernamLabel.Size = new System.Drawing.Size(60, 15);
+            this.CashierUsernamLabel.Size = new System.Drawing.Size(121, 27);
             this.CashierUsernamLabel.TabIndex = 12;
             this.CashierUsernamLabel.Text = "Username";
             // 
             // CashierSalaryLabel
             // 
             this.CashierSalaryLabel.AutoSize = true;
-            this.CashierSalaryLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.CashierSalaryLabel.Location = new System.Drawing.Point(8, 156);
+            this.CashierSalaryLabel.Font = new System.Drawing.Font("Snap ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CashierSalaryLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(91)))), ((int)(((byte)(110)))));
+            this.CashierSalaryLabel.Location = new System.Drawing.Point(474, 99);
+            this.CashierSalaryLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CashierSalaryLabel.Name = "CashierSalaryLabel";
-            this.CashierSalaryLabel.Size = new System.Drawing.Size(38, 15);
+            this.CashierSalaryLabel.Size = new System.Drawing.Size(88, 27);
             this.CashierSalaryLabel.TabIndex = 11;
             this.CashierSalaryLabel.Text = "Salary";
             // 
             // CashierPwdLabel
             // 
             this.CashierPwdLabel.AutoSize = true;
-            this.CashierPwdLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.CashierPwdLabel.Location = new System.Drawing.Point(8, 82);
+            this.CashierPwdLabel.Font = new System.Drawing.Font("Snap ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CashierPwdLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(91)))), ((int)(((byte)(110)))));
+            this.CashierPwdLabel.Location = new System.Drawing.Point(467, 194);
+            this.CashierPwdLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CashierPwdLabel.Name = "CashierPwdLabel";
-            this.CashierPwdLabel.Size = new System.Drawing.Size(57, 15);
+            this.CashierPwdLabel.Size = new System.Drawing.Size(121, 27);
             this.CashierPwdLabel.TabIndex = 10;
             this.CashierPwdLabel.Text = "Password";
             // 
             // CashierNameLabel
             // 
             this.CashierNameLabel.AutoSize = true;
-            this.CashierNameLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.CashierNameLabel.Location = new System.Drawing.Point(19, 19);
+            this.CashierNameLabel.Font = new System.Drawing.Font("Snap ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CashierNameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(91)))), ((int)(((byte)(110)))));
+            this.CashierNameLabel.Location = new System.Drawing.Point(87, 12);
+            this.CashierNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CashierNameLabel.Name = "CashierNameLabel";
-            this.CashierNameLabel.Size = new System.Drawing.Size(58, 15);
+            this.CashierNameLabel.Size = new System.Drawing.Size(117, 27);
             this.CashierNameLabel.TabIndex = 9;
             this.CashierNameLabel.Text = "FullName";
             // 
             // CashierPhoneNumber
             // 
+            this.CashierPhoneNumber.BackColor = System.Drawing.Color.Transparent;
             this.CashierPhoneNumber.BaseColor = System.Drawing.Color.White;
             this.CashierPhoneNumber.BorderColor = System.Drawing.Color.Silver;
             this.CashierPhoneNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -605,15 +768,18 @@
             this.CashierPhoneNumber.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.CashierPhoneNumber.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.CashierPhoneNumber.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.CashierPhoneNumber.Location = new System.Drawing.Point(602, 37);
+            this.CashierPhoneNumber.Location = new System.Drawing.Point(368, 46);
+            this.CashierPhoneNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CashierPhoneNumber.Name = "CashierPhoneNumber";
             this.CashierPhoneNumber.PasswordChar = '\0';
+            this.CashierPhoneNumber.Radius = 10;
             this.CashierPhoneNumber.SelectedText = "";
-            this.CashierPhoneNumber.Size = new System.Drawing.Size(188, 42);
+            this.CashierPhoneNumber.Size = new System.Drawing.Size(313, 52);
             this.CashierPhoneNumber.TabIndex = 8;
             // 
             // CashierSalaryTxtBox
             // 
+            this.CashierSalaryTxtBox.BackColor = System.Drawing.Color.Transparent;
             this.CashierSalaryTxtBox.BaseColor = System.Drawing.Color.White;
             this.CashierSalaryTxtBox.BorderColor = System.Drawing.Color.Silver;
             this.CashierSalaryTxtBox.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -621,15 +787,19 @@
             this.CashierSalaryTxtBox.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.CashierSalaryTxtBox.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.CashierSalaryTxtBox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.CashierSalaryTxtBox.Location = new System.Drawing.Point(11, 172);
+            this.CashierSalaryTxtBox.Location = new System.Drawing.Point(368, 131);
+            this.CashierSalaryTxtBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CashierSalaryTxtBox.Name = "CashierSalaryTxtBox";
             this.CashierSalaryTxtBox.PasswordChar = '\0';
+            this.CashierSalaryTxtBox.Radius = 10;
             this.CashierSalaryTxtBox.SelectedText = "";
-            this.CashierSalaryTxtBox.Size = new System.Drawing.Size(231, 42);
+            this.CashierSalaryTxtBox.Size = new System.Drawing.Size(313, 52);
             this.CashierSalaryTxtBox.TabIndex = 6;
+            this.CashierSalaryTxtBox.TextChanged += new System.EventHandler(this.CashierSalaryTxtBox_TextChanged);
             // 
             // CashierIdTxtBox
             // 
+            this.CashierIdTxtBox.BackColor = System.Drawing.Color.Transparent;
             this.CashierIdTxtBox.BaseColor = System.Drawing.Color.White;
             this.CashierIdTxtBox.BorderColor = System.Drawing.Color.Silver;
             this.CashierIdTxtBox.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -638,16 +808,19 @@
             this.CashierIdTxtBox.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.CashierIdTxtBox.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.CashierIdTxtBox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.CashierIdTxtBox.Location = new System.Drawing.Point(333, 105);
+            this.CashierIdTxtBox.Location = new System.Drawing.Point(15, 131);
+            this.CashierIdTxtBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CashierIdTxtBox.Name = "CashierIdTxtBox";
             this.CashierIdTxtBox.PasswordChar = '\0';
+            this.CashierIdTxtBox.Radius = 10;
             this.CashierIdTxtBox.ReadOnly = true;
             this.CashierIdTxtBox.SelectedText = "";
-            this.CashierIdTxtBox.Size = new System.Drawing.Size(231, 42);
+            this.CashierIdTxtBox.Size = new System.Drawing.Size(308, 52);
             this.CashierIdTxtBox.TabIndex = 5;
             // 
             // CashierPwdTxtBox
             // 
+            this.CashierPwdTxtBox.BackColor = System.Drawing.Color.Transparent;
             this.CashierPwdTxtBox.BaseColor = System.Drawing.Color.White;
             this.CashierPwdTxtBox.BorderColor = System.Drawing.Color.Silver;
             this.CashierPwdTxtBox.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -655,15 +828,18 @@
             this.CashierPwdTxtBox.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.CashierPwdTxtBox.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.CashierPwdTxtBox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.CashierPwdTxtBox.Location = new System.Drawing.Point(11, 98);
+            this.CashierPwdTxtBox.Location = new System.Drawing.Point(368, 225);
+            this.CashierPwdTxtBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CashierPwdTxtBox.Name = "CashierPwdTxtBox";
             this.CashierPwdTxtBox.PasswordChar = '*';
+            this.CashierPwdTxtBox.Radius = 10;
             this.CashierPwdTxtBox.SelectedText = "";
-            this.CashierPwdTxtBox.Size = new System.Drawing.Size(231, 42);
+            this.CashierPwdTxtBox.Size = new System.Drawing.Size(313, 52);
             this.CashierPwdTxtBox.TabIndex = 4;
             // 
             // CashierUsrNameTxtBox
             // 
+            this.CashierUsrNameTxtBox.BackColor = System.Drawing.Color.Transparent;
             this.CashierUsrNameTxtBox.BaseColor = System.Drawing.Color.White;
             this.CashierUsrNameTxtBox.BorderColor = System.Drawing.Color.Silver;
             this.CashierUsrNameTxtBox.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -671,15 +847,18 @@
             this.CashierUsrNameTxtBox.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.CashierUsrNameTxtBox.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.CashierUsrNameTxtBox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.CashierUsrNameTxtBox.Location = new System.Drawing.Point(333, 37);
+            this.CashierUsrNameTxtBox.Location = new System.Drawing.Point(15, 230);
+            this.CashierUsrNameTxtBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CashierUsrNameTxtBox.Name = "CashierUsrNameTxtBox";
             this.CashierUsrNameTxtBox.PasswordChar = '\0';
+            this.CashierUsrNameTxtBox.Radius = 10;
             this.CashierUsrNameTxtBox.SelectedText = "";
-            this.CashierUsrNameTxtBox.Size = new System.Drawing.Size(231, 42);
+            this.CashierUsrNameTxtBox.Size = new System.Drawing.Size(308, 52);
             this.CashierUsrNameTxtBox.TabIndex = 3;
             // 
             // CashierNameTxtBox
             // 
+            this.CashierNameTxtBox.BackColor = System.Drawing.Color.Transparent;
             this.CashierNameTxtBox.BaseColor = System.Drawing.Color.White;
             this.CashierNameTxtBox.BorderColor = System.Drawing.Color.Silver;
             this.CashierNameTxtBox.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -687,11 +866,13 @@
             this.CashierNameTxtBox.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.CashierNameTxtBox.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.CashierNameTxtBox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.CashierNameTxtBox.Location = new System.Drawing.Point(11, 37);
+            this.CashierNameTxtBox.Location = new System.Drawing.Point(15, 46);
+            this.CashierNameTxtBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CashierNameTxtBox.Name = "CashierNameTxtBox";
             this.CashierNameTxtBox.PasswordChar = '\0';
+            this.CashierNameTxtBox.Radius = 10;
             this.CashierNameTxtBox.SelectedText = "";
-            this.CashierNameTxtBox.Size = new System.Drawing.Size(231, 42);
+            this.CashierNameTxtBox.Size = new System.Drawing.Size(308, 52);
             this.CashierNameTxtBox.TabIndex = 2;
             // 
             // CategoryPanel
@@ -707,36 +888,44 @@
             this.CategoryPanel.Controls.Add(this.CategoryAddBtn);
             this.CategoryPanel.Controls.Add(this.CategoryNameLabel);
             this.CategoryPanel.Controls.Add(this.CategorNameTxtBox);
-            this.CategoryPanel.Location = new System.Drawing.Point(190, 58);
-            this.CategoryPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.CategoryPanel.Font = new System.Drawing.Font("Snap ITC", 12F);
+            this.CategoryPanel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(91)))), ((int)(((byte)(110)))));
+            this.CategoryPanel.Location = new System.Drawing.Point(253, 71);
+            this.CategoryPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CategoryPanel.Name = "CategoryPanel";
             this.CategoryPanel.Radius = 25;
-            this.CategoryPanel.Size = new System.Drawing.Size(836, 492);
+            this.CategoryPanel.Size = new System.Drawing.Size(1115, 606);
             this.CategoryPanel.TabIndex = 9;
+            this.CategoryPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.CategoryPanel_Paint);
             // 
             // CategorySearchLabel
             // 
             this.CategorySearchLabel.AutoSize = true;
-            this.CategorySearchLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.CategorySearchLabel.Location = new System.Drawing.Point(38, 115);
+            this.CategorySearchLabel.Font = new System.Drawing.Font("Snap ITC", 12F);
+            this.CategorySearchLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(91)))), ((int)(((byte)(110)))));
+            this.CategorySearchLabel.Location = new System.Drawing.Point(61, 112);
+            this.CategorySearchLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CategorySearchLabel.Name = "CategorySearchLabel";
-            this.CategorySearchLabel.Size = new System.Drawing.Size(42, 15);
+            this.CategorySearchLabel.Size = new System.Drawing.Size(92, 27);
             this.CategorySearchLabel.TabIndex = 8;
             this.CategorySearchLabel.Text = "Search";
+            this.CategorySearchLabel.Click += new System.EventHandler(this.CategorySearchLabel_Click);
             // 
             // CategoryGridView
             // 
             this.CategoryGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.CategoryGridView.Location = new System.Drawing.Point(41, 179);
+            this.CategoryGridView.Location = new System.Drawing.Point(34, 220);
+            this.CategoryGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CategoryGridView.Name = "CategoryGridView";
-            this.CategoryGridView.Size = new System.Drawing.Size(759, 294);
+            this.CategoryGridView.RowHeadersWidth = 51;
+            this.CategoryGridView.Size = new System.Drawing.Size(1061, 362);
             this.CategoryGridView.TabIndex = 7;
             // 
             // CategorySearchBtn
             // 
             this.CategorySearchBtn.AnimationHoverSpeed = 0.07F;
             this.CategorySearchBtn.AnimationSpeed = 0.03F;
-            this.CategorySearchBtn.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.CategorySearchBtn.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
             this.CategorySearchBtn.BorderColor = System.Drawing.Color.Black;
             this.CategorySearchBtn.CheckedBaseColor = System.Drawing.Color.Gray;
             this.CategorySearchBtn.CheckedBorderColor = System.Drawing.Color.Black;
@@ -745,20 +934,22 @@
             this.CategorySearchBtn.CheckedLineColor = System.Drawing.Color.DimGray;
             this.CategorySearchBtn.DialogResult = System.Windows.Forms.DialogResult.None;
             this.CategorySearchBtn.FocusedColor = System.Drawing.Color.Empty;
-            this.CategorySearchBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.CategorySearchBtn.Font = new System.Drawing.Font("Snap ITC", 12F);
             this.CategorySearchBtn.ForeColor = System.Drawing.Color.White;
             this.CategorySearchBtn.Image = ((System.Drawing.Image)(resources.GetObject("CategorySearchBtn.Image")));
-            this.CategorySearchBtn.ImageSize = new System.Drawing.Size(20, 20);
+            this.CategorySearchBtn.ImageSize = new System.Drawing.Size(40, 40);
             this.CategorySearchBtn.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.CategorySearchBtn.Location = new System.Drawing.Point(267, 131);
+            this.CategorySearchBtn.Location = new System.Drawing.Point(510, 132);
+            this.CategorySearchBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CategorySearchBtn.Name = "CategorySearchBtn";
-            this.CategorySearchBtn.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.CategorySearchBtn.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(91)))), ((int)(((byte)(110)))));
             this.CategorySearchBtn.OnHoverBorderColor = System.Drawing.Color.Black;
             this.CategorySearchBtn.OnHoverForeColor = System.Drawing.Color.White;
-            this.CategorySearchBtn.OnHoverImage = null;
+            this.CategorySearchBtn.OnHoverImage = ((System.Drawing.Image)(resources.GetObject("CategorySearchBtn.OnHoverImage")));
             this.CategorySearchBtn.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.CategorySearchBtn.OnPressedColor = System.Drawing.Color.Black;
-            this.CategorySearchBtn.Size = new System.Drawing.Size(85, 28);
+            this.CategorySearchBtn.Radius = 10;
+            this.CategorySearchBtn.Size = new System.Drawing.Size(151, 51);
             this.CategorySearchBtn.TabIndex = 6;
             this.CategorySearchBtn.Text = "Search";
             // 
@@ -773,18 +964,19 @@
             this.CategorySerchCombBox.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.CategorySerchCombBox.ForeColor = System.Drawing.Color.Black;
             this.CategorySerchCombBox.FormattingEnabled = true;
-            this.CategorySerchCombBox.Location = new System.Drawing.Point(41, 133);
+            this.CategorySerchCombBox.Location = new System.Drawing.Point(51, 152);
+            this.CategorySerchCombBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CategorySerchCombBox.Name = "CategorySerchCombBox";
             this.CategorySerchCombBox.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.CategorySerchCombBox.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.CategorySerchCombBox.Size = new System.Drawing.Size(173, 26);
+            this.CategorySerchCombBox.Size = new System.Drawing.Size(291, 31);
             this.CategorySerchCombBox.TabIndex = 5;
             // 
             // CategoryDeleteBtn
             // 
             this.CategoryDeleteBtn.AnimationHoverSpeed = 0.07F;
             this.CategoryDeleteBtn.AnimationSpeed = 0.03F;
-            this.CategoryDeleteBtn.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.CategoryDeleteBtn.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
             this.CategoryDeleteBtn.BorderColor = System.Drawing.Color.Black;
             this.CategoryDeleteBtn.CheckedBaseColor = System.Drawing.Color.Gray;
             this.CategoryDeleteBtn.CheckedBorderColor = System.Drawing.Color.Black;
@@ -793,20 +985,22 @@
             this.CategoryDeleteBtn.CheckedLineColor = System.Drawing.Color.DimGray;
             this.CategoryDeleteBtn.DialogResult = System.Windows.Forms.DialogResult.None;
             this.CategoryDeleteBtn.FocusedColor = System.Drawing.Color.Empty;
-            this.CategoryDeleteBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.CategoryDeleteBtn.Font = new System.Drawing.Font("Snap ITC", 12F);
             this.CategoryDeleteBtn.ForeColor = System.Drawing.Color.White;
             this.CategoryDeleteBtn.Image = ((System.Drawing.Image)(resources.GetObject("CategoryDeleteBtn.Image")));
-            this.CategoryDeleteBtn.ImageSize = new System.Drawing.Size(20, 20);
+            this.CategoryDeleteBtn.ImageSize = new System.Drawing.Size(40, 40);
             this.CategoryDeleteBtn.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.CategoryDeleteBtn.Location = new System.Drawing.Point(530, 52);
+            this.CategoryDeleteBtn.Location = new System.Drawing.Point(927, 32);
+            this.CategoryDeleteBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CategoryDeleteBtn.Name = "CategoryDeleteBtn";
-            this.CategoryDeleteBtn.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.CategoryDeleteBtn.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(91)))), ((int)(((byte)(110)))));
             this.CategoryDeleteBtn.OnHoverBorderColor = System.Drawing.Color.Black;
             this.CategoryDeleteBtn.OnHoverForeColor = System.Drawing.Color.White;
-            this.CategoryDeleteBtn.OnHoverImage = null;
+            this.CategoryDeleteBtn.OnHoverImage = ((System.Drawing.Image)(resources.GetObject("CategoryDeleteBtn.OnHoverImage")));
             this.CategoryDeleteBtn.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.CategoryDeleteBtn.OnPressedColor = System.Drawing.Color.Black;
-            this.CategoryDeleteBtn.Size = new System.Drawing.Size(85, 42);
+            this.CategoryDeleteBtn.Radius = 10;
+            this.CategoryDeleteBtn.Size = new System.Drawing.Size(151, 52);
             this.CategoryDeleteBtn.TabIndex = 4;
             this.CategoryDeleteBtn.Text = "Delete";
             // 
@@ -814,7 +1008,7 @@
             // 
             this.CategoryEditBtn.AnimationHoverSpeed = 0.07F;
             this.CategoryEditBtn.AnimationSpeed = 0.03F;
-            this.CategoryEditBtn.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.CategoryEditBtn.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
             this.CategoryEditBtn.BorderColor = System.Drawing.Color.Black;
             this.CategoryEditBtn.CheckedBaseColor = System.Drawing.Color.Gray;
             this.CategoryEditBtn.CheckedBorderColor = System.Drawing.Color.Black;
@@ -823,20 +1017,22 @@
             this.CategoryEditBtn.CheckedLineColor = System.Drawing.Color.DimGray;
             this.CategoryEditBtn.DialogResult = System.Windows.Forms.DialogResult.None;
             this.CategoryEditBtn.FocusedColor = System.Drawing.Color.Empty;
-            this.CategoryEditBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.CategoryEditBtn.Font = new System.Drawing.Font("Snap ITC", 12F);
             this.CategoryEditBtn.ForeColor = System.Drawing.Color.White;
             this.CategoryEditBtn.Image = ((System.Drawing.Image)(resources.GetObject("CategoryEditBtn.Image")));
-            this.CategoryEditBtn.ImageSize = new System.Drawing.Size(20, 20);
+            this.CategoryEditBtn.ImageSize = new System.Drawing.Size(40, 40);
             this.CategoryEditBtn.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.CategoryEditBtn.Location = new System.Drawing.Point(403, 52);
+            this.CategoryEditBtn.Location = new System.Drawing.Point(722, 31);
+            this.CategoryEditBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CategoryEditBtn.Name = "CategoryEditBtn";
-            this.CategoryEditBtn.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.CategoryEditBtn.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(91)))), ((int)(((byte)(110)))));
             this.CategoryEditBtn.OnHoverBorderColor = System.Drawing.Color.Black;
             this.CategoryEditBtn.OnHoverForeColor = System.Drawing.Color.White;
-            this.CategoryEditBtn.OnHoverImage = null;
+            this.CategoryEditBtn.OnHoverImage = ((System.Drawing.Image)(resources.GetObject("CategoryEditBtn.OnHoverImage")));
             this.CategoryEditBtn.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.CategoryEditBtn.OnPressedColor = System.Drawing.Color.Black;
-            this.CategoryEditBtn.Size = new System.Drawing.Size(85, 42);
+            this.CategoryEditBtn.Radius = 10;
+            this.CategoryEditBtn.Size = new System.Drawing.Size(151, 52);
             this.CategoryEditBtn.TabIndex = 3;
             this.CategoryEditBtn.Text = "Edit";
             // 
@@ -844,7 +1040,7 @@
             // 
             this.CategoryAddBtn.AnimationHoverSpeed = 0.07F;
             this.CategoryAddBtn.AnimationSpeed = 0.03F;
-            this.CategoryAddBtn.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.CategoryAddBtn.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
             this.CategoryAddBtn.BorderColor = System.Drawing.Color.Black;
             this.CategoryAddBtn.CheckedBaseColor = System.Drawing.Color.Gray;
             this.CategoryAddBtn.CheckedBorderColor = System.Drawing.Color.Black;
@@ -853,32 +1049,37 @@
             this.CategoryAddBtn.CheckedLineColor = System.Drawing.Color.DimGray;
             this.CategoryAddBtn.DialogResult = System.Windows.Forms.DialogResult.None;
             this.CategoryAddBtn.FocusedColor = System.Drawing.Color.Empty;
-            this.CategoryAddBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.CategoryAddBtn.Font = new System.Drawing.Font("Snap ITC", 12F);
             this.CategoryAddBtn.ForeColor = System.Drawing.Color.White;
             this.CategoryAddBtn.Image = ((System.Drawing.Image)(resources.GetObject("CategoryAddBtn.Image")));
-            this.CategoryAddBtn.ImageSize = new System.Drawing.Size(20, 20);
+            this.CategoryAddBtn.ImageSize = new System.Drawing.Size(40, 40);
             this.CategoryAddBtn.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.CategoryAddBtn.Location = new System.Drawing.Point(267, 53);
+            this.CategoryAddBtn.Location = new System.Drawing.Point(510, 31);
+            this.CategoryAddBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CategoryAddBtn.Name = "CategoryAddBtn";
-            this.CategoryAddBtn.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.CategoryAddBtn.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(91)))), ((int)(((byte)(110)))));
             this.CategoryAddBtn.OnHoverBorderColor = System.Drawing.Color.Black;
             this.CategoryAddBtn.OnHoverForeColor = System.Drawing.Color.White;
-            this.CategoryAddBtn.OnHoverImage = null;
+            this.CategoryAddBtn.OnHoverImage = ((System.Drawing.Image)(resources.GetObject("CategoryAddBtn.OnHoverImage")));
             this.CategoryAddBtn.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.CategoryAddBtn.OnPressedColor = System.Drawing.Color.Black;
-            this.CategoryAddBtn.Size = new System.Drawing.Size(85, 42);
+            this.CategoryAddBtn.Radius = 10;
+            this.CategoryAddBtn.Size = new System.Drawing.Size(151, 52);
             this.CategoryAddBtn.TabIndex = 2;
             this.CategoryAddBtn.Text = "Add";
             // 
             // CategoryNameLabel
             // 
             this.CategoryNameLabel.AutoSize = true;
-            this.CategoryNameLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.CategoryNameLabel.Location = new System.Drawing.Point(16, 35);
+            this.CategoryNameLabel.Font = new System.Drawing.Font("Snap ITC", 12F);
+            this.CategoryNameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(91)))), ((int)(((byte)(110)))));
+            this.CategoryNameLabel.Location = new System.Drawing.Point(61, 15);
+            this.CategoryNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CategoryNameLabel.Name = "CategoryNameLabel";
-            this.CategoryNameLabel.Size = new System.Drawing.Size(39, 15);
+            this.CategoryNameLabel.Size = new System.Drawing.Size(73, 27);
             this.CategoryNameLabel.TabIndex = 1;
             this.CategoryNameLabel.Text = "Name";
+            this.CategoryNameLabel.Click += new System.EventHandler(this.CategoryNameLabel_Click);
             // 
             // CategorNameTxtBox
             // 
@@ -889,11 +1090,12 @@
             this.CategorNameTxtBox.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.CategorNameTxtBox.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.CategorNameTxtBox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.CategorNameTxtBox.Location = new System.Drawing.Point(19, 53);
+            this.CategorNameTxtBox.Location = new System.Drawing.Point(51, 51);
+            this.CategorNameTxtBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CategorNameTxtBox.Name = "CategorNameTxtBox";
             this.CategorNameTxtBox.PasswordChar = '\0';
             this.CategorNameTxtBox.SelectedText = "";
-            this.CategorNameTxtBox.Size = new System.Drawing.Size(218, 43);
+            this.CategorNameTxtBox.Size = new System.Drawing.Size(291, 53);
             this.CategorNameTxtBox.TabIndex = 0;
             // 
             // BillPanel
@@ -902,7 +1104,6 @@
             this.BillPanel.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
             this.BillPanel.Controls.Add(this.BillTotalPricTxtBox);
             this.BillPanel.Controls.Add(this.BillPayBtn);
-            this.BillPanel.Controls.Add(this.gunaDataGridView1);
             this.BillPanel.Controls.Add(this.BillPrintBtn);
             this.BillPanel.Controls.Add(this.BillDeleteProductBtn);
             this.BillPanel.Controls.Add(this.BiilEditProductBtn);
@@ -927,11 +1128,11 @@
             this.BillPanel.Controls.Add(this.BillSupplierNameComBox);
             this.BillPanel.Controls.Add(this.BiliDLabel);
             this.BillPanel.Controls.Add(this.BilliDTxtBox);
-            this.BillPanel.Location = new System.Drawing.Point(190, 58);
-            this.BillPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.BillPanel.Location = new System.Drawing.Point(253, 71);
+            this.BillPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BillPanel.Name = "BillPanel";
             this.BillPanel.Radius = 25;
-            this.BillPanel.Size = new System.Drawing.Size(836, 492);
+            this.BillPanel.Size = new System.Drawing.Size(1115, 606);
             this.BillPanel.TabIndex = 10;
             this.BillPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.BillPanel_Paint);
             // 
@@ -944,12 +1145,13 @@
             this.BillTotalPricTxtBox.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.BillTotalPricTxtBox.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.BillTotalPricTxtBox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.BillTotalPricTxtBox.Location = new System.Drawing.Point(189, 440);
+            this.BillTotalPricTxtBox.Location = new System.Drawing.Point(252, 542);
+            this.BillTotalPricTxtBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BillTotalPricTxtBox.Name = "BillTotalPricTxtBox";
             this.BillTotalPricTxtBox.PasswordChar = '\0';
             this.BillTotalPricTxtBox.ReadOnly = true;
             this.BillTotalPricTxtBox.SelectedText = "";
-            this.BillTotalPricTxtBox.Size = new System.Drawing.Size(105, 33);
+            this.BillTotalPricTxtBox.Size = new System.Drawing.Size(140, 41);
             this.BillTotalPricTxtBox.TabIndex = 29;
             // 
             // BillPayBtn
@@ -970,7 +1172,8 @@
             this.BillPayBtn.Image = ((System.Drawing.Image)(resources.GetObject("BillPayBtn.Image")));
             this.BillPayBtn.ImageSize = new System.Drawing.Size(20, 20);
             this.BillPayBtn.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.BillPayBtn.Location = new System.Drawing.Point(319, 431);
+            this.BillPayBtn.Location = new System.Drawing.Point(425, 530);
+            this.BillPayBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BillPayBtn.Name = "BillPayBtn";
             this.BillPayBtn.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.BillPayBtn.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -978,67 +1181,10 @@
             this.BillPayBtn.OnHoverImage = null;
             this.BillPayBtn.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.BillPayBtn.OnPressedColor = System.Drawing.Color.Black;
-            this.BillPayBtn.Size = new System.Drawing.Size(126, 42);
+            this.BillPayBtn.Size = new System.Drawing.Size(168, 52);
             this.BillPayBtn.TabIndex = 28;
             this.BillPayBtn.Text = "Pay";
             this.BillPayBtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // gunaDataGridView1
-            // 
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
-            this.gunaDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
-            this.gunaDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.gunaDataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.gunaDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.gunaDataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.gunaDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gunaDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
-            this.gunaDataGridView1.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gunaDataGridView1.DefaultCellStyle = dataGridViewCellStyle18;
-            this.gunaDataGridView1.EnableHeadersVisualStyles = false;
-            this.gunaDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gunaDataGridView1.Location = new System.Drawing.Point(480, 115);
-            this.gunaDataGridView1.Name = "gunaDataGridView1";
-            this.gunaDataGridView1.RowHeadersVisible = false;
-            this.gunaDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gunaDataGridView1.Size = new System.Drawing.Size(240, 358);
-            this.gunaDataGridView1.TabIndex = 27;
-            this.gunaDataGridView1.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
-            this.gunaDataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.gunaDataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.gunaDataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.gunaDataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.gunaDataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.gunaDataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.gunaDataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gunaDataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaDataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.gunaDataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.gunaDataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.gunaDataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.gunaDataGridView1.ThemeStyle.HeaderStyle.Height = 4;
-            this.gunaDataGridView1.ThemeStyle.ReadOnly = false;
-            this.gunaDataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.gunaDataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.gunaDataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.gunaDataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.gunaDataGridView1.ThemeStyle.RowsStyle.Height = 22;
-            this.gunaDataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gunaDataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
             // BillPrintBtn
             // 
@@ -1058,7 +1204,8 @@
             this.BillPrintBtn.Image = ((System.Drawing.Image)(resources.GetObject("BillPrintBtn.Image")));
             this.BillPrintBtn.ImageSize = new System.Drawing.Size(20, 20);
             this.BillPrintBtn.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.BillPrintBtn.Location = new System.Drawing.Point(41, 418);
+            this.BillPrintBtn.Location = new System.Drawing.Point(55, 514);
+            this.BillPrintBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BillPrintBtn.Name = "BillPrintBtn";
             this.BillPrintBtn.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.BillPrintBtn.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -1066,7 +1213,7 @@
             this.BillPrintBtn.OnHoverImage = null;
             this.BillPrintBtn.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.BillPrintBtn.OnPressedColor = System.Drawing.Color.Black;
-            this.BillPrintBtn.Size = new System.Drawing.Size(78, 42);
+            this.BillPrintBtn.Size = new System.Drawing.Size(104, 52);
             this.BillPrintBtn.TabIndex = 26;
             this.BillPrintBtn.Text = "Print ";
             // 
@@ -1088,7 +1235,8 @@
             this.BillDeleteProductBtn.Image = ((System.Drawing.Image)(resources.GetObject("BillDeleteProductBtn.Image")));
             this.BillDeleteProductBtn.ImageSize = new System.Drawing.Size(20, 20);
             this.BillDeleteProductBtn.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.BillDeleteProductBtn.Location = new System.Drawing.Point(319, 348);
+            this.BillDeleteProductBtn.Location = new System.Drawing.Point(425, 428);
+            this.BillDeleteProductBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BillDeleteProductBtn.Name = "BillDeleteProductBtn";
             this.BillDeleteProductBtn.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.BillDeleteProductBtn.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -1096,7 +1244,7 @@
             this.BillDeleteProductBtn.OnHoverImage = null;
             this.BillDeleteProductBtn.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.BillDeleteProductBtn.OnPressedColor = System.Drawing.Color.Black;
-            this.BillDeleteProductBtn.Size = new System.Drawing.Size(126, 42);
+            this.BillDeleteProductBtn.Size = new System.Drawing.Size(168, 52);
             this.BillDeleteProductBtn.TabIndex = 25;
             this.BillDeleteProductBtn.Text = "Delete Product";
             // 
@@ -1118,7 +1266,8 @@
             this.BiilEditProductBtn.Image = ((System.Drawing.Image)(resources.GetObject("BiilEditProductBtn.Image")));
             this.BiilEditProductBtn.ImageSize = new System.Drawing.Size(20, 20);
             this.BiilEditProductBtn.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.BiilEditProductBtn.Location = new System.Drawing.Point(319, 259);
+            this.BiilEditProductBtn.Location = new System.Drawing.Point(425, 319);
+            this.BiilEditProductBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BiilEditProductBtn.Name = "BiilEditProductBtn";
             this.BiilEditProductBtn.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.BiilEditProductBtn.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -1126,7 +1275,7 @@
             this.BiilEditProductBtn.OnHoverImage = null;
             this.BiilEditProductBtn.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.BiilEditProductBtn.OnPressedColor = System.Drawing.Color.Black;
-            this.BiilEditProductBtn.Size = new System.Drawing.Size(126, 42);
+            this.BiilEditProductBtn.Size = new System.Drawing.Size(168, 52);
             this.BiilEditProductBtn.TabIndex = 24;
             this.BiilEditProductBtn.Text = "Edit Product";
             // 
@@ -1148,7 +1297,8 @@
             this.BillAddProductBtn.Image = ((System.Drawing.Image)(resources.GetObject("BillAddProductBtn.Image")));
             this.BillAddProductBtn.ImageSize = new System.Drawing.Size(20, 20);
             this.BillAddProductBtn.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.BillAddProductBtn.Location = new System.Drawing.Point(319, 189);
+            this.BillAddProductBtn.Location = new System.Drawing.Point(425, 233);
+            this.BillAddProductBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BillAddProductBtn.Name = "BillAddProductBtn";
             this.BillAddProductBtn.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.BillAddProductBtn.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -1156,7 +1306,7 @@
             this.BillAddProductBtn.OnHoverImage = null;
             this.BillAddProductBtn.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.BillAddProductBtn.OnPressedColor = System.Drawing.Color.Black;
-            this.BillAddProductBtn.Size = new System.Drawing.Size(126, 42);
+            this.BillAddProductBtn.Size = new System.Drawing.Size(168, 52);
             this.BillAddProductBtn.TabIndex = 23;
             this.BillAddProductBtn.Text = "Add Product";
             // 
@@ -1164,9 +1314,10 @@
             // 
             this.BillTotallPrice.AutoSize = true;
             this.BillTotallPrice.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.BillTotallPrice.Location = new System.Drawing.Point(211, 418);
+            this.BillTotallPrice.Location = new System.Drawing.Point(281, 514);
+            this.BillTotallPrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.BillTotallPrice.Name = "BillTotallPrice";
-            this.BillTotallPrice.Size = new System.Drawing.Size(61, 15);
+            this.BillTotallPrice.Size = new System.Drawing.Size(78, 20);
             this.BillTotallPrice.TabIndex = 22;
             this.BillTotallPrice.Text = "Total Price";
             // 
@@ -1179,7 +1330,8 @@
             this.gunaDateTimePicker1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunaDateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaDateTimePicker1.ForeColor = System.Drawing.Color.Black;
-            this.gunaDateTimePicker1.Location = new System.Drawing.Point(19, 360);
+            this.gunaDateTimePicker1.Location = new System.Drawing.Point(25, 443);
+            this.gunaDateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gunaDateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.gunaDateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.gunaDateTimePicker1.Name = "gunaDateTimePicker1";
@@ -1187,7 +1339,7 @@
             this.gunaDateTimePicker1.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunaDateTimePicker1.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunaDateTimePicker1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaDateTimePicker1.Size = new System.Drawing.Size(199, 30);
+            this.gunaDateTimePicker1.Size = new System.Drawing.Size(265, 37);
             this.gunaDateTimePicker1.TabIndex = 21;
             this.gunaDateTimePicker1.Text = "Saturday, January 29, 2022";
             this.gunaDateTimePicker1.Value = new System.DateTime(2022, 1, 29, 22, 13, 10, 24);
@@ -1195,18 +1347,20 @@
             // BillProductExpireDateLabel
             // 
             this.BillProductExpireDateLabel.AutoSize = true;
-            this.BillProductExpireDateLabel.Location = new System.Drawing.Point(16, 328);
+            this.BillProductExpireDateLabel.Location = new System.Drawing.Point(21, 404);
+            this.BillProductExpireDateLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.BillProductExpireDateLabel.Name = "BillProductExpireDateLabel";
-            this.BillProductExpireDateLabel.Size = new System.Drawing.Size(62, 13);
+            this.BillProductExpireDateLabel.Size = new System.Drawing.Size(77, 16);
             this.BillProductExpireDateLabel.TabIndex = 20;
             this.BillProductExpireDateLabel.Text = "Expire Date";
             // 
             // BillSupPriceForBuyLabel
             // 
             this.BillSupPriceForBuyLabel.AutoSize = true;
-            this.BillSupPriceForBuyLabel.Location = new System.Drawing.Point(186, 249);
+            this.BillSupPriceForBuyLabel.Location = new System.Drawing.Point(248, 306);
+            this.BillSupPriceForBuyLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.BillSupPriceForBuyLabel.Name = "BillSupPriceForBuyLabel";
-            this.BillSupPriceForBuyLabel.Size = new System.Drawing.Size(64, 13);
+            this.BillSupPriceForBuyLabel.Size = new System.Drawing.Size(78, 16);
             this.BillSupPriceForBuyLabel.TabIndex = 18;
             this.BillSupPriceForBuyLabel.Text = "Price of Buy";
             // 
@@ -1219,19 +1373,21 @@
             this.BillSupPriceSellTxtBox.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.BillSupPriceSellTxtBox.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.BillSupPriceSellTxtBox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.BillSupPriceSellTxtBox.Location = new System.Drawing.Point(189, 268);
+            this.BillSupPriceSellTxtBox.Location = new System.Drawing.Point(252, 330);
+            this.BillSupPriceSellTxtBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BillSupPriceSellTxtBox.Name = "BillSupPriceSellTxtBox";
             this.BillSupPriceSellTxtBox.PasswordChar = '\0';
             this.BillSupPriceSellTxtBox.SelectedText = "";
-            this.BillSupPriceSellTxtBox.Size = new System.Drawing.Size(105, 33);
+            this.BillSupPriceSellTxtBox.Size = new System.Drawing.Size(140, 41);
             this.BillSupPriceSellTxtBox.TabIndex = 17;
             // 
             // BillSupPriceSellLabel
             // 
             this.BillSupPriceSellLabel.AutoSize = true;
-            this.BillSupPriceSellLabel.Location = new System.Drawing.Point(16, 249);
+            this.BillSupPriceSellLabel.Location = new System.Drawing.Point(21, 306);
+            this.BillSupPriceSellLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.BillSupPriceSellLabel.Name = "BillSupPriceSellLabel";
-            this.BillSupPriceSellLabel.Size = new System.Drawing.Size(61, 13);
+            this.BillSupPriceSellLabel.Size = new System.Drawing.Size(76, 16);
             this.BillSupPriceSellLabel.TabIndex = 16;
             this.BillSupPriceSellLabel.Text = "Price of sell";
             // 
@@ -1244,19 +1400,21 @@
             this.BillPriceOfSellTxtBox.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.BillPriceOfSellTxtBox.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.BillPriceOfSellTxtBox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.BillPriceOfSellTxtBox.Location = new System.Drawing.Point(19, 268);
+            this.BillPriceOfSellTxtBox.Location = new System.Drawing.Point(25, 330);
+            this.BillPriceOfSellTxtBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BillPriceOfSellTxtBox.Name = "BillPriceOfSellTxtBox";
             this.BillPriceOfSellTxtBox.PasswordChar = '\0';
             this.BillPriceOfSellTxtBox.SelectedText = "";
-            this.BillPriceOfSellTxtBox.Size = new System.Drawing.Size(121, 33);
+            this.BillPriceOfSellTxtBox.Size = new System.Drawing.Size(161, 41);
             this.BillPriceOfSellTxtBox.TabIndex = 15;
             // 
             // BillSupplierAmountLabel
             // 
             this.BillSupplierAmountLabel.AutoSize = true;
-            this.BillSupplierAmountLabel.Location = new System.Drawing.Point(186, 182);
+            this.BillSupplierAmountLabel.Location = new System.Drawing.Point(248, 224);
+            this.BillSupplierAmountLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.BillSupplierAmountLabel.Name = "BillSupplierAmountLabel";
-            this.BillSupplierAmountLabel.Size = new System.Drawing.Size(43, 13);
+            this.BillSupplierAmountLabel.Size = new System.Drawing.Size(52, 16);
             this.BillSupplierAmountLabel.TabIndex = 14;
             this.BillSupplierAmountLabel.Text = "Amount";
             // 
@@ -1268,11 +1426,12 @@
             this.BillSupplierAmountNumeric.ButtonForeColor = System.Drawing.Color.White;
             this.BillSupplierAmountNumeric.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.BillSupplierAmountNumeric.ForeColor = System.Drawing.Color.Black;
-            this.BillSupplierAmountNumeric.Location = new System.Drawing.Point(189, 200);
+            this.BillSupplierAmountNumeric.Location = new System.Drawing.Point(252, 246);
+            this.BillSupplierAmountNumeric.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BillSupplierAmountNumeric.Maximum = ((long)(9999999));
             this.BillSupplierAmountNumeric.Minimum = ((long)(0));
             this.BillSupplierAmountNumeric.Name = "BillSupplierAmountNumeric";
-            this.BillSupplierAmountNumeric.Size = new System.Drawing.Size(105, 30);
+            this.BillSupplierAmountNumeric.Size = new System.Drawing.Size(140, 30);
             this.BillSupplierAmountNumeric.TabIndex = 13;
             this.BillSupplierAmountNumeric.Text = "gunaNumeric1";
             this.BillSupplierAmountNumeric.Value = ((long)(0));
@@ -1280,9 +1439,10 @@
             // BillProductNameLabel
             // 
             this.BillProductNameLabel.AutoSize = true;
-            this.BillProductNameLabel.Location = new System.Drawing.Point(22, 177);
+            this.BillProductNameLabel.Location = new System.Drawing.Point(29, 218);
+            this.BillProductNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.BillProductNameLabel.Name = "BillProductNameLabel";
-            this.BillProductNameLabel.Size = new System.Drawing.Size(75, 13);
+            this.BillProductNameLabel.Size = new System.Drawing.Size(93, 16);
             this.BillProductNameLabel.TabIndex = 12;
             this.BillProductNameLabel.Text = "Product Name";
             // 
@@ -1297,11 +1457,12 @@
             this.BillProductNameComBox.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.BillProductNameComBox.ForeColor = System.Drawing.Color.Black;
             this.BillProductNameComBox.FormattingEnabled = true;
-            this.BillProductNameComBox.Location = new System.Drawing.Point(19, 200);
+            this.BillProductNameComBox.Location = new System.Drawing.Point(25, 246);
+            this.BillProductNameComBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BillProductNameComBox.Name = "BillProductNameComBox";
             this.BillProductNameComBox.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.BillProductNameComBox.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.BillProductNameComBox.Size = new System.Drawing.Size(121, 26);
+            this.BillProductNameComBox.Size = new System.Drawing.Size(160, 31);
             this.BillProductNameComBox.TabIndex = 11;
             // 
             // BillCreateBtn
@@ -1322,7 +1483,8 @@
             this.BillCreateBtn.Image = ((System.Drawing.Image)(resources.GetObject("BillCreateBtn.Image")));
             this.BillCreateBtn.ImageSize = new System.Drawing.Size(20, 20);
             this.BillCreateBtn.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.BillCreateBtn.Location = new System.Drawing.Point(174, 97);
+            this.BillCreateBtn.Location = new System.Drawing.Point(232, 119);
+            this.BillCreateBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BillCreateBtn.Name = "BillCreateBtn";
             this.BillCreateBtn.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.BillCreateBtn.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -1330,16 +1492,17 @@
             this.BillCreateBtn.OnHoverImage = null;
             this.BillCreateBtn.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.BillCreateBtn.OnPressedColor = System.Drawing.Color.Black;
-            this.BillCreateBtn.Size = new System.Drawing.Size(134, 42);
+            this.BillCreateBtn.Size = new System.Drawing.Size(179, 52);
             this.BillCreateBtn.TabIndex = 10;
             this.BillCreateBtn.Text = "Create A Bill";
             // 
             // BillSupplierIdLabel
             // 
             this.BillSupplierIdLabel.AutoSize = true;
-            this.BillSupplierIdLabel.Location = new System.Drawing.Point(159, 17);
+            this.BillSupplierIdLabel.Location = new System.Drawing.Point(212, 21);
+            this.BillSupplierIdLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.BillSupplierIdLabel.Name = "BillSupplierIdLabel";
-            this.BillSupplierIdLabel.Size = new System.Drawing.Size(59, 13);
+            this.BillSupplierIdLabel.Size = new System.Drawing.Size(73, 16);
             this.BillSupplierIdLabel.TabIndex = 9;
             this.BillSupplierIdLabel.Text = "Supplier ID";
             // 
@@ -1352,20 +1515,22 @@
             this.BillSupplierIdTxtBox.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.BillSupplierIdTxtBox.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.BillSupplierIdTxtBox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.BillSupplierIdTxtBox.Location = new System.Drawing.Point(162, 36);
+            this.BillSupplierIdTxtBox.Location = new System.Drawing.Point(216, 44);
+            this.BillSupplierIdTxtBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BillSupplierIdTxtBox.Name = "BillSupplierIdTxtBox";
             this.BillSupplierIdTxtBox.PasswordChar = '\0';
             this.BillSupplierIdTxtBox.ReadOnly = true;
             this.BillSupplierIdTxtBox.SelectedText = "";
-            this.BillSupplierIdTxtBox.Size = new System.Drawing.Size(75, 33);
+            this.BillSupplierIdTxtBox.Size = new System.Drawing.Size(100, 41);
             this.BillSupplierIdTxtBox.TabIndex = 8;
             // 
             // BillCategoryNameLabel
             // 
             this.BillCategoryNameLabel.AutoSize = true;
-            this.BillCategoryNameLabel.Location = new System.Drawing.Point(393, 18);
+            this.BillCategoryNameLabel.Location = new System.Drawing.Point(524, 22);
+            this.BillCategoryNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.BillCategoryNameLabel.Name = "BillCategoryNameLabel";
-            this.BillCategoryNameLabel.Size = new System.Drawing.Size(77, 13);
+            this.BillCategoryNameLabel.Size = new System.Drawing.Size(99, 16);
             this.BillCategoryNameLabel.TabIndex = 7;
             this.BillCategoryNameLabel.Text = "CategoryName";
             // 
@@ -1378,20 +1543,22 @@
             this.BillCategoryNameTxtBox.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.BillCategoryNameTxtBox.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.BillCategoryNameTxtBox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.BillCategoryNameTxtBox.Location = new System.Drawing.Point(396, 35);
+            this.BillCategoryNameTxtBox.Location = new System.Drawing.Point(528, 43);
+            this.BillCategoryNameTxtBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BillCategoryNameTxtBox.Name = "BillCategoryNameTxtBox";
             this.BillCategoryNameTxtBox.PasswordChar = '\0';
             this.BillCategoryNameTxtBox.ReadOnly = true;
             this.BillCategoryNameTxtBox.SelectedText = "";
-            this.BillCategoryNameTxtBox.Size = new System.Drawing.Size(109, 33);
+            this.BillCategoryNameTxtBox.Size = new System.Drawing.Size(145, 41);
             this.BillCategoryNameTxtBox.TabIndex = 6;
             // 
             // BillSupplierNameLabel
             // 
             this.BillSupplierNameLabel.AutoSize = true;
-            this.BillSupplierNameLabel.Location = new System.Drawing.Point(22, 13);
+            this.BillSupplierNameLabel.Location = new System.Drawing.Point(29, 16);
+            this.BillSupplierNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.BillSupplierNameLabel.Name = "BillSupplierNameLabel";
-            this.BillSupplierNameLabel.Size = new System.Drawing.Size(73, 13);
+            this.BillSupplierNameLabel.Size = new System.Drawing.Size(94, 16);
             this.BillSupplierNameLabel.TabIndex = 5;
             this.BillSupplierNameLabel.Text = "SupplierName";
             // 
@@ -1406,19 +1573,21 @@
             this.BillSupplierNameComBox.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.BillSupplierNameComBox.ForeColor = System.Drawing.Color.Black;
             this.BillSupplierNameComBox.FormattingEnabled = true;
-            this.BillSupplierNameComBox.Location = new System.Drawing.Point(19, 36);
+            this.BillSupplierNameComBox.Location = new System.Drawing.Point(25, 44);
+            this.BillSupplierNameComBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BillSupplierNameComBox.Name = "BillSupplierNameComBox";
             this.BillSupplierNameComBox.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.BillSupplierNameComBox.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.BillSupplierNameComBox.Size = new System.Drawing.Size(121, 26);
+            this.BillSupplierNameComBox.Size = new System.Drawing.Size(160, 31);
             this.BillSupplierNameComBox.TabIndex = 4;
             // 
             // BiliDLabel
             // 
             this.BiliDLabel.AutoSize = true;
-            this.BiliDLabel.Location = new System.Drawing.Point(274, 16);
+            this.BiliDLabel.Location = new System.Drawing.Point(365, 20);
+            this.BiliDLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.BiliDLabel.Name = "BiliDLabel";
-            this.BiliDLabel.Size = new System.Drawing.Size(34, 13);
+            this.BiliDLabel.Size = new System.Drawing.Size(41, 16);
             this.BiliDLabel.TabIndex = 3;
             this.BiliDLabel.Text = "Bill ID";
             // 
@@ -1431,19 +1600,22 @@
             this.BilliDTxtBox.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.BilliDTxtBox.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.BilliDTxtBox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.BilliDTxtBox.Location = new System.Drawing.Point(277, 35);
+            this.BilliDTxtBox.Location = new System.Drawing.Point(369, 43);
+            this.BilliDTxtBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BilliDTxtBox.Name = "BilliDTxtBox";
             this.BilliDTxtBox.PasswordChar = '\0';
             this.BilliDTxtBox.ReadOnly = true;
             this.BilliDTxtBox.SelectedText = "";
-            this.BilliDTxtBox.Size = new System.Drawing.Size(75, 33);
+            this.BilliDTxtBox.Size = new System.Drawing.Size(100, 41);
             this.BilliDTxtBox.TabIndex = 0;
             // 
             // SupplierPanel
             // 
             this.SupplierPanel.BackColor = System.Drawing.Color.Transparent;
             this.SupplierPanel.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.SupplierPanel.Controls.Add(this.SupplierGridView);
+            this.SupplierPanel.Controls.Add(this.gunaDataGridView1);
+            this.SupplierPanel.Controls.Add(this.SupplierIIDLabel);
+            this.SupplierPanel.Controls.Add(this.SupplierIDTxtBox);
             this.SupplierPanel.Controls.Add(this.SupplierDeleteProductBtn);
             this.SupplierPanel.Controls.Add(this.SupplierEditProductBtn);
             this.SupplierPanel.Controls.Add(this.SupplierAddProductBtn);
@@ -1462,70 +1634,13 @@
             this.SupplierPanel.Controls.Add(this.SupplierNameLabel);
             this.SupplierPanel.Controls.Add(this.SupplierPhoneTxtBox);
             this.SupplierPanel.Controls.Add(this.SupplierNameTxtBox);
-            this.SupplierPanel.Location = new System.Drawing.Point(190, 58);
-            this.SupplierPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.SupplierPanel.Location = new System.Drawing.Point(253, 71);
+            this.SupplierPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SupplierPanel.Name = "SupplierPanel";
             this.SupplierPanel.Radius = 25;
-            this.SupplierPanel.Size = new System.Drawing.Size(836, 492);
+            this.SupplierPanel.Size = new System.Drawing.Size(1115, 606);
             this.SupplierPanel.TabIndex = 11;
             this.SupplierPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.SupplierPanel_Paint);
-            // 
-            // SupplierGridView
-            // 
-            dataGridViewCellStyle19.BackColor = System.Drawing.Color.White;
-            this.SupplierGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle19;
-            this.SupplierGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.SupplierGridView.BackgroundColor = System.Drawing.Color.White;
-            this.SupplierGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.SupplierGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.SupplierGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.SupplierGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle20;
-            this.SupplierGridView.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle21.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle21.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.SupplierGridView.DefaultCellStyle = dataGridViewCellStyle21;
-            this.SupplierGridView.EnableHeadersVisualStyles = false;
-            this.SupplierGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.SupplierGridView.Location = new System.Drawing.Point(19, 277);
-            this.SupplierGridView.Name = "SupplierGridView";
-            this.SupplierGridView.RowHeadersVisible = false;
-            this.SupplierGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.SupplierGridView.Size = new System.Drawing.Size(790, 196);
-            this.SupplierGridView.TabIndex = 21;
-            this.SupplierGridView.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
-            this.SupplierGridView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.SupplierGridView.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.SupplierGridView.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.SupplierGridView.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.SupplierGridView.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.SupplierGridView.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.SupplierGridView.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.SupplierGridView.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.SupplierGridView.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.SupplierGridView.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.SupplierGridView.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.SupplierGridView.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.SupplierGridView.ThemeStyle.HeaderStyle.Height = 4;
-            this.SupplierGridView.ThemeStyle.ReadOnly = false;
-            this.SupplierGridView.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.SupplierGridView.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.SupplierGridView.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.SupplierGridView.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.SupplierGridView.ThemeStyle.RowsStyle.Height = 22;
-            this.SupplierGridView.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.SupplierGridView.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
             // SupplierDeleteProductBtn
             // 
@@ -1545,7 +1660,8 @@
             this.SupplierDeleteProductBtn.Image = ((System.Drawing.Image)(resources.GetObject("SupplierDeleteProductBtn.Image")));
             this.SupplierDeleteProductBtn.ImageSize = new System.Drawing.Size(20, 20);
             this.SupplierDeleteProductBtn.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.SupplierDeleteProductBtn.Location = new System.Drawing.Point(696, 220);
+            this.SupplierDeleteProductBtn.Location = new System.Drawing.Point(944, 256);
+            this.SupplierDeleteProductBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SupplierDeleteProductBtn.Name = "SupplierDeleteProductBtn";
             this.SupplierDeleteProductBtn.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.SupplierDeleteProductBtn.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -1553,7 +1669,7 @@
             this.SupplierDeleteProductBtn.OnHoverImage = null;
             this.SupplierDeleteProductBtn.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.SupplierDeleteProductBtn.OnPressedColor = System.Drawing.Color.Black;
-            this.SupplierDeleteProductBtn.Size = new System.Drawing.Size(125, 42);
+            this.SupplierDeleteProductBtn.Size = new System.Drawing.Size(167, 52);
             this.SupplierDeleteProductBtn.TabIndex = 20;
             this.SupplierDeleteProductBtn.Text = "Delete Product";
             // 
@@ -1575,7 +1691,8 @@
             this.SupplierEditProductBtn.Image = ((System.Drawing.Image)(resources.GetObject("SupplierEditProductBtn.Image")));
             this.SupplierEditProductBtn.ImageSize = new System.Drawing.Size(20, 20);
             this.SupplierEditProductBtn.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.SupplierEditProductBtn.Location = new System.Drawing.Point(579, 220);
+            this.SupplierEditProductBtn.Location = new System.Drawing.Point(784, 256);
+            this.SupplierEditProductBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SupplierEditProductBtn.Name = "SupplierEditProductBtn";
             this.SupplierEditProductBtn.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.SupplierEditProductBtn.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -1583,7 +1700,7 @@
             this.SupplierEditProductBtn.OnHoverImage = null;
             this.SupplierEditProductBtn.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.SupplierEditProductBtn.OnPressedColor = System.Drawing.Color.Black;
-            this.SupplierEditProductBtn.Size = new System.Drawing.Size(114, 42);
+            this.SupplierEditProductBtn.Size = new System.Drawing.Size(152, 52);
             this.SupplierEditProductBtn.TabIndex = 19;
             this.SupplierEditProductBtn.Text = "Edit Product";
             this.SupplierEditProductBtn.Click += new System.EventHandler(this.gunaAdvenceButton5_Click);
@@ -1606,7 +1723,8 @@
             this.SupplierAddProductBtn.Image = ((System.Drawing.Image)(resources.GetObject("SupplierAddProductBtn.Image")));
             this.SupplierAddProductBtn.ImageSize = new System.Drawing.Size(20, 20);
             this.SupplierAddProductBtn.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.SupplierAddProductBtn.Location = new System.Drawing.Point(463, 220);
+            this.SupplierAddProductBtn.Location = new System.Drawing.Point(620, 257);
+            this.SupplierAddProductBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SupplierAddProductBtn.Name = "SupplierAddProductBtn";
             this.SupplierAddProductBtn.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.SupplierAddProductBtn.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -1614,7 +1732,7 @@
             this.SupplierAddProductBtn.OnHoverImage = null;
             this.SupplierAddProductBtn.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.SupplierAddProductBtn.OnPressedColor = System.Drawing.Color.Black;
-            this.SupplierAddProductBtn.Size = new System.Drawing.Size(113, 42);
+            this.SupplierAddProductBtn.Size = new System.Drawing.Size(151, 52);
             this.SupplierAddProductBtn.TabIndex = 18;
             this.SupplierAddProductBtn.Text = "Add Product";
             this.SupplierAddProductBtn.Click += new System.EventHandler(this.gunaAdvenceButton6_Click);
@@ -1637,7 +1755,8 @@
             this.SupplierDeleteSupBtn.Image = ((System.Drawing.Image)(resources.GetObject("SupplierDeleteSupBtn.Image")));
             this.SupplierDeleteSupBtn.ImageSize = new System.Drawing.Size(20, 20);
             this.SupplierDeleteSupBtn.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.SupplierDeleteSupBtn.Location = new System.Drawing.Point(695, 112);
+            this.SupplierDeleteSupBtn.Location = new System.Drawing.Point(927, 138);
+            this.SupplierDeleteSupBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SupplierDeleteSupBtn.Name = "SupplierDeleteSupBtn";
             this.SupplierDeleteSupBtn.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.SupplierDeleteSupBtn.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -1645,7 +1764,7 @@
             this.SupplierDeleteSupBtn.OnHoverImage = null;
             this.SupplierDeleteSupBtn.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.SupplierDeleteSupBtn.OnPressedColor = System.Drawing.Color.Black;
-            this.SupplierDeleteSupBtn.Size = new System.Drawing.Size(126, 42);
+            this.SupplierDeleteSupBtn.Size = new System.Drawing.Size(168, 52);
             this.SupplierDeleteSupBtn.TabIndex = 17;
             this.SupplierDeleteSupBtn.Text = "Delete Supplier";
             // 
@@ -1667,7 +1786,8 @@
             this.SupplierEditSupBtn.Image = ((System.Drawing.Image)(resources.GetObject("SupplierEditSupBtn.Image")));
             this.SupplierEditSupBtn.ImageSize = new System.Drawing.Size(20, 20);
             this.SupplierEditSupBtn.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.SupplierEditSupBtn.Location = new System.Drawing.Point(514, 112);
+            this.SupplierEditSupBtn.Location = new System.Drawing.Point(685, 138);
+            this.SupplierEditSupBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SupplierEditSupBtn.Name = "SupplierEditSupBtn";
             this.SupplierEditSupBtn.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.SupplierEditSupBtn.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -1675,7 +1795,7 @@
             this.SupplierEditSupBtn.OnHoverImage = null;
             this.SupplierEditSupBtn.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.SupplierEditSupBtn.OnPressedColor = System.Drawing.Color.Black;
-            this.SupplierEditSupBtn.Size = new System.Drawing.Size(127, 42);
+            this.SupplierEditSupBtn.Size = new System.Drawing.Size(169, 52);
             this.SupplierEditSupBtn.TabIndex = 16;
             this.SupplierEditSupBtn.Text = "Edit Supplier";
             // 
@@ -1697,7 +1817,8 @@
             this.SupplierAddSupBtn.Image = ((System.Drawing.Image)(resources.GetObject("SupplierAddSupBtn.Image")));
             this.SupplierAddSupBtn.ImageSize = new System.Drawing.Size(20, 20);
             this.SupplierAddSupBtn.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.SupplierAddSupBtn.Location = new System.Drawing.Point(302, 112);
+            this.SupplierAddSupBtn.Location = new System.Drawing.Point(403, 138);
+            this.SupplierAddSupBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SupplierAddSupBtn.Name = "SupplierAddSupBtn";
             this.SupplierAddSupBtn.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.SupplierAddSupBtn.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -1705,9 +1826,10 @@
             this.SupplierAddSupBtn.OnHoverImage = null;
             this.SupplierAddSupBtn.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.SupplierAddSupBtn.OnPressedColor = System.Drawing.Color.Black;
-            this.SupplierAddSupBtn.Size = new System.Drawing.Size(130, 42);
+            this.SupplierAddSupBtn.Size = new System.Drawing.Size(173, 52);
             this.SupplierAddSupBtn.TabIndex = 15;
             this.SupplierAddSupBtn.Text = "Add Supplier";
+            this.SupplierAddSupBtn.Click += new System.EventHandler(this.SupplierAddSupBtn_Click);
             // 
             // SupplierCategoryTxtBox
             // 
@@ -1718,20 +1840,22 @@
             this.SupplierCategoryTxtBox.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.SupplierCategoryTxtBox.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.SupplierCategoryTxtBox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.SupplierCategoryTxtBox.Location = new System.Drawing.Point(294, 36);
+            this.SupplierCategoryTxtBox.Location = new System.Drawing.Point(828, 44);
+            this.SupplierCategoryTxtBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SupplierCategoryTxtBox.Name = "SupplierCategoryTxtBox";
             this.SupplierCategoryTxtBox.PasswordChar = '\0';
             this.SupplierCategoryTxtBox.SelectedText = "";
-            this.SupplierCategoryTxtBox.Size = new System.Drawing.Size(211, 33);
+            this.SupplierCategoryTxtBox.Size = new System.Drawing.Size(226, 49);
             this.SupplierCategoryTxtBox.TabIndex = 14;
             // 
             // SupplierProductPriceSellLabel
             // 
             this.SupplierProductPriceSellLabel.AutoSize = true;
             this.SupplierProductPriceSellLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.SupplierProductPriceSellLabel.Location = new System.Drawing.Point(245, 211);
+            this.SupplierProductPriceSellLabel.Location = new System.Drawing.Point(331, 228);
+            this.SupplierProductPriceSellLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.SupplierProductPriceSellLabel.Name = "SupplierProductPriceSellLabel";
-            this.SupplierProductPriceSellLabel.Size = new System.Drawing.Size(78, 15);
+            this.SupplierProductPriceSellLabel.Size = new System.Drawing.Size(96, 20);
             this.SupplierProductPriceSellLabel.TabIndex = 13;
             this.SupplierProductPriceSellLabel.Text = "Product Price";
             // 
@@ -1744,20 +1868,22 @@
             this.SupplierProductPriceSellTxtBox.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.SupplierProductPriceSellTxtBox.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.SupplierProductPriceSellTxtBox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.SupplierProductPriceSellTxtBox.Location = new System.Drawing.Point(248, 229);
+            this.SupplierProductPriceSellTxtBox.Location = new System.Drawing.Point(331, 256);
+            this.SupplierProductPriceSellTxtBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SupplierProductPriceSellTxtBox.Name = "SupplierProductPriceSellTxtBox";
             this.SupplierProductPriceSellTxtBox.PasswordChar = '\0';
             this.SupplierProductPriceSellTxtBox.SelectedText = "";
-            this.SupplierProductPriceSellTxtBox.Size = new System.Drawing.Size(211, 33);
+            this.SupplierProductPriceSellTxtBox.Size = new System.Drawing.Size(281, 41);
             this.SupplierProductPriceSellTxtBox.TabIndex = 12;
             // 
             // SupplierProductNameLabel
             // 
             this.SupplierProductNameLabel.AutoSize = true;
             this.SupplierProductNameLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.SupplierProductNameLabel.Location = new System.Drawing.Point(13, 211);
+            this.SupplierProductNameLabel.Location = new System.Drawing.Point(30, 224);
+            this.SupplierProductNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.SupplierProductNameLabel.Name = "SupplierProductNameLabel";
-            this.SupplierProductNameLabel.Size = new System.Drawing.Size(84, 15);
+            this.SupplierProductNameLabel.Size = new System.Drawing.Size(104, 20);
             this.SupplierProductNameLabel.TabIndex = 11;
             this.SupplierProductNameLabel.Text = "Product Name";
             // 
@@ -1770,20 +1896,22 @@
             this.SupplierProductNameTextBox.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.SupplierProductNameTextBox.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.SupplierProductNameTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.SupplierProductNameTextBox.Location = new System.Drawing.Point(16, 229);
+            this.SupplierProductNameTextBox.Location = new System.Drawing.Point(32, 257);
+            this.SupplierProductNameTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SupplierProductNameTextBox.Name = "SupplierProductNameTextBox";
             this.SupplierProductNameTextBox.PasswordChar = '\0';
             this.SupplierProductNameTextBox.SelectedText = "";
-            this.SupplierProductNameTextBox.Size = new System.Drawing.Size(211, 33);
+            this.SupplierProductNameTextBox.Size = new System.Drawing.Size(264, 41);
             this.SupplierProductNameTextBox.TabIndex = 10;
             // 
             // SupplierProductsCmbBox
             // 
             this.SupplierProductsCmbBox.AutoSize = true;
             this.SupplierProductsCmbBox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.SupplierProductsCmbBox.Location = new System.Drawing.Point(587, 9);
+            this.SupplierProductsCmbBox.Location = new System.Drawing.Point(25, 108);
+            this.SupplierProductsCmbBox.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.SupplierProductsCmbBox.Name = "SupplierProductsCmbBox";
-            this.SupplierProductsCmbBox.Size = new System.Drawing.Size(54, 15);
+            this.SupplierProductsCmbBox.Size = new System.Drawing.Size(66, 20);
             this.SupplierProductsCmbBox.TabIndex = 9;
             this.SupplierProductsCmbBox.Text = "Products";
             // 
@@ -1798,20 +1926,22 @@
             this.gunaComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.gunaComboBox1.ForeColor = System.Drawing.Color.Black;
             this.gunaComboBox1.FormattingEnabled = true;
-            this.gunaComboBox1.Location = new System.Drawing.Point(589, 43);
+            this.gunaComboBox1.Location = new System.Drawing.Point(32, 160);
+            this.gunaComboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gunaComboBox1.Name = "gunaComboBox1";
             this.gunaComboBox1.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunaComboBox1.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.gunaComboBox1.Size = new System.Drawing.Size(211, 26);
+            this.gunaComboBox1.Size = new System.Drawing.Size(280, 31);
             this.gunaComboBox1.TabIndex = 8;
             // 
             // SupplierPhoneLabel
             // 
             this.SupplierPhoneLabel.AutoSize = true;
             this.SupplierPhoneLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.SupplierPhoneLabel.Location = new System.Drawing.Point(16, 81);
+            this.SupplierPhoneLabel.Location = new System.Drawing.Point(543, 13);
+            this.SupplierPhoneLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.SupplierPhoneLabel.Name = "SupplierPhoneLabel";
-            this.SupplierPhoneLabel.Size = new System.Drawing.Size(41, 15);
+            this.SupplierPhoneLabel.Size = new System.Drawing.Size(50, 20);
             this.SupplierPhoneLabel.TabIndex = 7;
             this.SupplierPhoneLabel.Text = "Phone";
             // 
@@ -1819,9 +1949,10 @@
             // 
             this.SupplierCategoryLable.AutoSize = true;
             this.SupplierCategoryLable.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.SupplierCategoryLable.Location = new System.Drawing.Point(291, 11);
+            this.SupplierCategoryLable.Location = new System.Drawing.Point(824, 17);
+            this.SupplierCategoryLable.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.SupplierCategoryLable.Name = "SupplierCategoryLable";
-            this.SupplierCategoryLable.Size = new System.Drawing.Size(55, 15);
+            this.SupplierCategoryLable.Size = new System.Drawing.Size(69, 20);
             this.SupplierCategoryLable.TabIndex = 6;
             this.SupplierCategoryLable.Text = "Category";
             // 
@@ -1829,9 +1960,10 @@
             // 
             this.SupplierNameLabel.AutoSize = true;
             this.SupplierNameLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.SupplierNameLabel.Location = new System.Drawing.Point(16, 18);
+            this.SupplierNameLabel.Location = new System.Drawing.Point(21, 22);
+            this.SupplierNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.SupplierNameLabel.Name = "SupplierNameLabel";
-            this.SupplierNameLabel.Size = new System.Drawing.Size(39, 15);
+            this.SupplierNameLabel.Size = new System.Drawing.Size(49, 20);
             this.SupplierNameLabel.TabIndex = 5;
             this.SupplierNameLabel.Text = "Name";
             // 
@@ -1844,12 +1976,14 @@
             this.SupplierPhoneTxtBox.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.SupplierPhoneTxtBox.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.SupplierPhoneTxtBox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.SupplierPhoneTxtBox.Location = new System.Drawing.Point(19, 99);
+            this.SupplierPhoneTxtBox.Location = new System.Drawing.Point(542, 46);
+            this.SupplierPhoneTxtBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SupplierPhoneTxtBox.Name = "SupplierPhoneTxtBox";
             this.SupplierPhoneTxtBox.PasswordChar = '\0';
             this.SupplierPhoneTxtBox.SelectedText = "";
-            this.SupplierPhoneTxtBox.Size = new System.Drawing.Size(211, 89);
+            this.SupplierPhoneTxtBox.Size = new System.Drawing.Size(226, 49);
             this.SupplierPhoneTxtBox.TabIndex = 2;
+            this.SupplierPhoneTxtBox.TextChanged += new System.EventHandler(this.SupplierPhoneTxtBox_TextChanged);
             // 
             // SupplierNameTxtBox
             // 
@@ -1860,11 +1994,12 @@
             this.SupplierNameTxtBox.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.SupplierNameTxtBox.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.SupplierNameTxtBox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.SupplierNameTxtBox.Location = new System.Drawing.Point(19, 36);
+            this.SupplierNameTxtBox.Location = new System.Drawing.Point(29, 44);
+            this.SupplierNameTxtBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SupplierNameTxtBox.Name = "SupplierNameTxtBox";
             this.SupplierNameTxtBox.PasswordChar = '\0';
             this.SupplierNameTxtBox.SelectedText = "";
-            this.SupplierNameTxtBox.Size = new System.Drawing.Size(211, 33);
+            this.SupplierNameTxtBox.Size = new System.Drawing.Size(226, 49);
             this.SupplierNameTxtBox.TabIndex = 1;
             // 
             // ReportPanel
@@ -1878,11 +2013,11 @@
             this.ReportPanel.Controls.Add(this.ReportTypeLabel);
             this.ReportPanel.Controls.Add(this.ReportTypeComboBox);
             this.ReportPanel.Controls.Add(this.ReportGridView);
-            this.ReportPanel.Location = new System.Drawing.Point(190, 58);
-            this.ReportPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.ReportPanel.Location = new System.Drawing.Point(253, 71);
+            this.ReportPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ReportPanel.Name = "ReportPanel";
             this.ReportPanel.Radius = 25;
-            this.ReportPanel.Size = new System.Drawing.Size(836, 492);
+            this.ReportPanel.Size = new System.Drawing.Size(1115, 606);
             this.ReportPanel.TabIndex = 12;
             // 
             // ReportPrintBtn
@@ -1903,7 +2038,8 @@
             this.ReportPrintBtn.Image = ((System.Drawing.Image)(resources.GetObject("ReportPrintBtn.Image")));
             this.ReportPrintBtn.ImageSize = new System.Drawing.Size(20, 20);
             this.ReportPrintBtn.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.ReportPrintBtn.Location = new System.Drawing.Point(319, 113);
+            this.ReportPrintBtn.Location = new System.Drawing.Point(425, 139);
+            this.ReportPrintBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ReportPrintBtn.Name = "ReportPrintBtn";
             this.ReportPrintBtn.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.ReportPrintBtn.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -1911,25 +2047,27 @@
             this.ReportPrintBtn.OnHoverImage = null;
             this.ReportPrintBtn.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.ReportPrintBtn.OnPressedColor = System.Drawing.Color.Black;
-            this.ReportPrintBtn.Size = new System.Drawing.Size(122, 42);
+            this.ReportPrintBtn.Size = new System.Drawing.Size(163, 52);
             this.ReportPrintBtn.TabIndex = 6;
             this.ReportPrintBtn.Text = "Print Report";
             // 
             // ReportCategoryNameLabel
             // 
             this.ReportCategoryNameLabel.AutoSize = true;
-            this.ReportCategoryNameLabel.Location = new System.Drawing.Point(38, 91);
+            this.ReportCategoryNameLabel.Location = new System.Drawing.Point(51, 112);
+            this.ReportCategoryNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ReportCategoryNameLabel.Name = "ReportCategoryNameLabel";
-            this.ReportCategoryNameLabel.Size = new System.Drawing.Size(74, 13);
+            this.ReportCategoryNameLabel.Size = new System.Drawing.Size(94, 16);
             this.ReportCategoryNameLabel.TabIndex = 5;
             this.ReportCategoryNameLabel.Text = "Catgory Name";
             // 
             // ReportCategoriesComboBox
             // 
             this.ReportCategoriesComboBox.FormattingEnabled = true;
-            this.ReportCategoriesComboBox.Location = new System.Drawing.Point(38, 109);
+            this.ReportCategoriesComboBox.Location = new System.Drawing.Point(51, 134);
+            this.ReportCategoriesComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ReportCategoriesComboBox.Name = "ReportCategoriesComboBox";
-            this.ReportCategoriesComboBox.Size = new System.Drawing.Size(180, 21);
+            this.ReportCategoriesComboBox.Size = new System.Drawing.Size(239, 24);
             this.ReportCategoriesComboBox.TabIndex = 4;
             // 
             // ReportViewBtn
@@ -1950,7 +2088,8 @@
             this.ReportViewBtn.Image = ((System.Drawing.Image)(resources.GetObject("ReportViewBtn.Image")));
             this.ReportViewBtn.ImageSize = new System.Drawing.Size(20, 20);
             this.ReportViewBtn.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.ReportViewBtn.Location = new System.Drawing.Point(319, 35);
+            this.ReportViewBtn.Location = new System.Drawing.Point(425, 43);
+            this.ReportViewBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ReportViewBtn.Name = "ReportViewBtn";
             this.ReportViewBtn.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.ReportViewBtn.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -1958,60 +2097,64 @@
             this.ReportViewBtn.OnHoverImage = null;
             this.ReportViewBtn.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.ReportViewBtn.OnPressedColor = System.Drawing.Color.Black;
-            this.ReportViewBtn.Size = new System.Drawing.Size(122, 42);
+            this.ReportViewBtn.Size = new System.Drawing.Size(163, 52);
             this.ReportViewBtn.TabIndex = 3;
             this.ReportViewBtn.Text = "Report View";
             // 
             // ReportTypeLabel
             // 
             this.ReportTypeLabel.AutoSize = true;
-            this.ReportTypeLabel.Location = new System.Drawing.Point(38, 18);
+            this.ReportTypeLabel.Location = new System.Drawing.Point(51, 22);
+            this.ReportTypeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ReportTypeLabel.Name = "ReportTypeLabel";
-            this.ReportTypeLabel.Size = new System.Drawing.Size(66, 13);
+            this.ReportTypeLabel.Size = new System.Drawing.Size(83, 16);
             this.ReportTypeLabel.TabIndex = 2;
             this.ReportTypeLabel.Text = "Report Type";
             // 
             // ReportTypeComboBox
             // 
             this.ReportTypeComboBox.FormattingEnabled = true;
-            this.ReportTypeComboBox.Location = new System.Drawing.Point(38, 36);
+            this.ReportTypeComboBox.Location = new System.Drawing.Point(51, 44);
+            this.ReportTypeComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ReportTypeComboBox.Name = "ReportTypeComboBox";
-            this.ReportTypeComboBox.Size = new System.Drawing.Size(180, 21);
+            this.ReportTypeComboBox.Size = new System.Drawing.Size(239, 24);
             this.ReportTypeComboBox.TabIndex = 1;
             // 
             // ReportGridView
             // 
-            dataGridViewCellStyle22.BackColor = System.Drawing.Color.White;
-            this.ReportGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.ReportGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.ReportGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.ReportGridView.BackgroundColor = System.Drawing.Color.White;
             this.ReportGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ReportGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.ReportGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle23.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ReportGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ReportGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.ReportGridView.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle24.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle24.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.ReportGridView.DefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.ReportGridView.DefaultCellStyle = dataGridViewCellStyle9;
             this.ReportGridView.EnableHeadersVisualStyles = false;
             this.ReportGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.ReportGridView.Location = new System.Drawing.Point(9, 198);
+            this.ReportGridView.Location = new System.Drawing.Point(12, 244);
+            this.ReportGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ReportGridView.Name = "ReportGridView";
             this.ReportGridView.RowHeadersVisible = false;
+            this.ReportGridView.RowHeadersWidth = 51;
             this.ReportGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.ReportGridView.Size = new System.Drawing.Size(812, 283);
+            this.ReportGridView.Size = new System.Drawing.Size(1083, 348);
             this.ReportGridView.TabIndex = 0;
             this.ReportGridView.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.ReportGridView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -2036,140 +2179,118 @@
             this.ReportGridView.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.ReportGridView.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // CashierDataGridView
+            // SupplierIIDLabel
             // 
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
-            this.CashierDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
-            this.CashierDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.CashierDataGridView.BackgroundColor = System.Drawing.Color.White;
-            this.CashierDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.CashierDataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.CashierDataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.CashierDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
-            this.CashierDataGridView.ColumnHeadersHeight = 40;
-            this.CashierDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column7,
-            this.Column5,
-            this.Column6,
-            this.Column4,
-            this.Column3});
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.CashierDataGridView.DefaultCellStyle = dataGridViewCellStyle15;
-            this.CashierDataGridView.EnableHeadersVisualStyles = false;
-            this.CashierDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.CashierDataGridView.Location = new System.Drawing.Point(11, 291);
-            this.CashierDataGridView.Name = "CashierDataGridView";
-            this.CashierDataGridView.RowHeadersVisible = false;
-            this.CashierDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.CashierDataGridView.Size = new System.Drawing.Size(810, 169);
-            this.CashierDataGridView.TabIndex = 19;
-            this.CashierDataGridView.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
-            this.CashierDataGridView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.CashierDataGridView.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.CashierDataGridView.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.CashierDataGridView.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.CashierDataGridView.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.CashierDataGridView.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.CashierDataGridView.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.CashierDataGridView.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.CashierDataGridView.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.CashierDataGridView.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.CashierDataGridView.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.CashierDataGridView.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.CashierDataGridView.ThemeStyle.HeaderStyle.Height = 40;
-            this.CashierDataGridView.ThemeStyle.ReadOnly = false;
-            this.CashierDataGridView.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.CashierDataGridView.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.CashierDataGridView.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.CashierDataGridView.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.CashierDataGridView.ThemeStyle.RowsStyle.Height = 22;
-            this.CashierDataGridView.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.CashierDataGridView.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.SupplierIIDLabel.AutoSize = true;
+            this.SupplierIIDLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.SupplierIIDLabel.Location = new System.Drawing.Point(281, 16);
+            this.SupplierIIDLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.SupplierIIDLabel.Name = "SupplierIIDLabel";
+            this.SupplierIIDLabel.Size = new System.Drawing.Size(24, 20);
+            this.SupplierIIDLabel.TabIndex = 22;
+            this.SupplierIIDLabel.Text = "ID";
             // 
-            // Column1
+            // SupplierIDTxtBox
             // 
-            this.Column1.DataPropertyName = "Phone";
-            this.Column1.HeaderText = "Phone";
-            this.Column1.Name = "Column1";
+            this.SupplierIDTxtBox.BaseColor = System.Drawing.Color.White;
+            this.SupplierIDTxtBox.BorderColor = System.Drawing.Color.Silver;
+            this.SupplierIDTxtBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.SupplierIDTxtBox.Enabled = false;
+            this.SupplierIDTxtBox.FocusedBaseColor = System.Drawing.Color.White;
+            this.SupplierIDTxtBox.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.SupplierIDTxtBox.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.SupplierIDTxtBox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.SupplierIDTxtBox.Location = new System.Drawing.Point(285, 44);
+            this.SupplierIDTxtBox.Margin = new System.Windows.Forms.Padding(4);
+            this.SupplierIDTxtBox.Name = "SupplierIDTxtBox";
+            this.SupplierIDTxtBox.PasswordChar = '\0';
+            this.SupplierIDTxtBox.SelectedText = "";
+            this.SupplierIDTxtBox.Size = new System.Drawing.Size(226, 49);
+            this.SupplierIDTxtBox.TabIndex = 21;
             // 
-            // Column2
+            // gunaDataGridView1
             // 
-            this.Column2.DataPropertyName = "Name";
-            this.Column2.HeaderText = "Name";
-            this.Column2.Name = "Column2";
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.gunaDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.gunaDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gunaDataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.gunaDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.gunaDataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.gunaDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gunaDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.gunaDataGridView1.ColumnHeadersHeight = 4;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gunaDataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
+            this.gunaDataGridView1.EnableHeadersVisualStyles = false;
+            this.gunaDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.gunaDataGridView1.Location = new System.Drawing.Point(51, 330);
+            this.gunaDataGridView1.Name = "gunaDataGridView1";
+            this.gunaDataGridView1.RowHeadersVisible = false;
+            this.gunaDataGridView1.RowHeadersWidth = 51;
+            this.gunaDataGridView1.RowTemplate.Height = 24;
+            this.gunaDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.gunaDataGridView1.Size = new System.Drawing.Size(1044, 263);
+            this.gunaDataGridView1.TabIndex = 23;
+            this.gunaDataGridView1.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
+            this.gunaDataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.gunaDataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.gunaDataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.gunaDataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.gunaDataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.gunaDataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.gunaDataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.gunaDataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaDataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.gunaDataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.gunaDataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.gunaDataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.gunaDataGridView1.ThemeStyle.HeaderStyle.Height = 4;
+            this.gunaDataGridView1.ThemeStyle.ReadOnly = false;
+            this.gunaDataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.gunaDataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.gunaDataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.gunaDataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.gunaDataGridView1.ThemeStyle.RowsStyle.Height = 24;
+            this.gunaDataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.gunaDataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // Column7
+            // MinimixeButton
             // 
-            this.Column7.DataPropertyName = "ID";
-            this.Column7.HeaderText = "ID";
-            this.Column7.Name = "Column7";
-            // 
-            // Column5
-            // 
-            this.Column5.DataPropertyName = "Username";
-            this.Column5.HeaderText = "User Name";
-            this.Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            this.Column6.DataPropertyName = "Password";
-            this.Column6.HeaderText = "Password";
-            this.Column6.Name = "Column6";
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "WorkingHours";
-            this.Column4.HeaderText = "Working Hour";
-            this.Column4.Name = "Column4";
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "Salary";
-            this.Column3.HeaderText = "Salary";
-            this.Column3.Name = "Column3";
+            this.MinimixeButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.MinimixeButton.Image = ((System.Drawing.Image)(resources.GetObject("MinimixeButton.Image")));
+            this.MinimixeButton.ImageSize = new System.Drawing.Size(64, 64);
+            this.MinimixeButton.Location = new System.Drawing.Point(1274, 12);
+            this.MinimixeButton.Name = "MinimixeButton";
+            this.MinimixeButton.OnHoverImage = null;
+            this.MinimixeButton.OnHoverImageOffset = new System.Drawing.Point(0, 0);
+            this.MinimixeButton.Size = new System.Drawing.Size(33, 42);
+            this.MinimixeButton.TabIndex = 13;
+            this.MinimixeButton.Click += new System.EventHandler(this.MinimixeButton_Click);
             // 
             // cashierBindingSource
             // 
             this.cashierBindingSource.DataSource = typeof(HyperMarket1.Cashier);
             // 
-            // CahshierWorkingHourNumeric
-            // 
-            this.CahshierWorkingHourNumeric.BaseColor = System.Drawing.Color.White;
-            this.CahshierWorkingHourNumeric.BorderColor = System.Drawing.Color.Silver;
-            this.CahshierWorkingHourNumeric.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.CahshierWorkingHourNumeric.ButtonForeColor = System.Drawing.Color.White;
-            this.CahshierWorkingHourNumeric.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.CahshierWorkingHourNumeric.ForeColor = System.Drawing.Color.Black;
-            this.CahshierWorkingHourNumeric.Location = new System.Drawing.Point(334, 177);
-            this.CahshierWorkingHourNumeric.Maximum = ((long)(24));
-            this.CahshierWorkingHourNumeric.Minimum = ((long)(1));
-            this.CahshierWorkingHourNumeric.Name = "CahshierWorkingHourNumeric";
-            this.CahshierWorkingHourNumeric.Size = new System.Drawing.Size(200, 30);
-            this.CahshierWorkingHourNumeric.TabIndex = 20;
-            this.CahshierWorkingHourNumeric.Text = "gunaNumeric1";
-            this.CahshierWorkingHourNumeric.Value = ((long)(1));
-            // 
             // AdminForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(176)))), ((int)(((byte)(174)))));
-            this.ClientSize = new System.Drawing.Size(1038, 570);
+            this.ClientSize = new System.Drawing.Size(1384, 702);
+            this.Controls.Add(this.MinimixeButton);
             this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.LogoutButton);
             this.Controls.Add(this.ReportButton);
@@ -2185,25 +2306,25 @@
             this.Controls.Add(this.ReportPanel);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AdminForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.AdminForm_Load);
             this.CashierPanel.ResumeLayout(false);
             this.CashierPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CashierDataGridView)).EndInit();
             this.CategoryPanel.ResumeLayout(false);
             this.CategoryPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CategoryGridView)).EndInit();
             this.BillPanel.ResumeLayout(false);
             this.BillPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView1)).EndInit();
             this.SupplierPanel.ResumeLayout(false);
             this.SupplierPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.SupplierGridView)).EndInit();
             this.ReportPanel.ResumeLayout(false);
             this.ReportPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ReportGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CashierDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cashierBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -2260,7 +2381,6 @@
         private Guna.UI.WinForms.GunaAdvenceButton SupplierDeleteSupBtn;
         private Guna.UI.WinForms.GunaAdvenceButton SupplierEditSupBtn;
         private Guna.UI.WinForms.GunaAdvenceButton SupplierAddSupBtn;
-        private Guna.UI.WinForms.GunaDataGridView SupplierGridView;
         private Guna.UI.WinForms.GunaLabel CategoryNameLabel;
         private Guna.UI.WinForms.GunaTextBox CategorNameTxtBox;
         private Guna.UI.WinForms.GunaLabel CategorySearchLabel;
@@ -2291,7 +2411,6 @@
         private System.Windows.Forms.Label BillProductExpireDateLabel;
         private Guna.UI.WinForms.GunaLabel BillTotallPrice;
         private Guna.UI.WinForms.GunaAdvenceButton BillPayBtn;
-        private Guna.UI.WinForms.GunaDataGridView gunaDataGridView1;
         private Guna.UI.WinForms.GunaAdvenceButton BillPrintBtn;
         private Guna.UI.WinForms.GunaAdvenceButton BillDeleteProductBtn;
         private Guna.UI.WinForms.GunaAdvenceButton BiilEditProductBtn;
@@ -2314,6 +2433,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private Guna.UI.WinForms.GunaNumeric CahshierWorkingHourNumeric;
+        private Guna.UI.WinForms.GunaLabel SupplierIIDLabel;
+        private Guna.UI.WinForms.GunaTextBox SupplierIDTxtBox;
+        private Guna.UI.WinForms.GunaDataGridView gunaDataGridView1;
+        private Guna.UI.WinForms.GunaImageButton MinimixeButton;
     }
 }
 
